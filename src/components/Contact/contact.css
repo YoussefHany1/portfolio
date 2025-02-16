@@ -1,0 +1,38 @@
+.contact{
+    & form{
+      font-family: sans-serif;
+      max-width: 600px;
+      & .send{
+        border: 1px solid #cbcbcb4f;
+      }
+    }
+    & .box{
+      background-color: #cbcbcb1a;
+      & .social{
+        width: 100%;
+        & svg{
+          margin: 0 1rem;
+          width: 100%;
+          max-width: 70px;
+          transition-duration: 0.3s;
+          &:hover{
+            transform: scale(1.2);
+          }
+        }
+      }
+      .download {
+        font-family: sans-serif;
+        border: 1px solid #cbcbcb4f;
+        & svg{
+          width: 2em;
+          margin: 0 .5rem;
+        }
+      }
+    }
+  }
+  .btn-outline-success{
+    --bs-btn-color: #16c72e !important;
+      --bs-btn-border-color: #16c72e !important;
+      --bs-btn-hover-bg: #16c72e !important;
+      --bs-btn-hover-border-color: #16c72e !important;
+  }

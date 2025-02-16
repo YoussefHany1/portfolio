@@ -1,0 +1,25 @@
+.our-services{
+    margin-top: -100px;
+    &::before{
+      content: "";
+      background: #cbcbcb;
+      display: block;
+      height: 2px;
+      margin-bottom: 12px;
+      opacity: .3;
+      width: 100%;
+    }
+    .box{
+      border: 2px solid #cbcbcb3d;
+  
+      transition-duration: 0.3s;
+      &:hover{
+        border: 2px solid #16c72e;
+        box-shadow: 0px 0px 20px 5px #16c72e;
+      }
+      & p{
+        font-family: sans-serif;
+        color: #adb5bd;
+      }
+    }
+  }
