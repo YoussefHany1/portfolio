@@ -7,7 +7,7 @@ function Skills() {
     <>
     <section className='skills py-3 mb-5'>
       <h2 className='text-uppercase text-white mt-5 fw-bold mb-0 ps-sm-3 ps-lg-5 pb-5 text-center text-md-start'>Skills</h2>
-      <div className="skills-content d-flex align-items-center overflow-hidden py-3">
+      <div className="skills-content d-flex overflow-hidden py-3">
       <Splide
           options={{
             type: 'loop',

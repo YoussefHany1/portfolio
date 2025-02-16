@@ -3,6 +3,7 @@ import lottie from 'lottie-web';
 import { defineElement } from "@lordicon/element";
 import megamart from '/src/assets/megamart.webp'
 import mohid from '/src/assets/mohid.webp'
+import burger from '/src/assets/burger.webp'
 defineElement(lottie.loadAnimation);
 function Projects() {
     return (
@@ -14,7 +15,7 @@ function Projects() {
                     <div className="text text-white ps-3 mt-lg-0 mt-3">
                         <h3 className='fw-bold fs-1'>Front-end for E-commerce website</h3>
                         <p className='pb-2'>Design and implementation of front-end interfaces for an e-commerce website</p>
-                        <button className='bg-transparent text-white rounded-circle '><a href='' target='_blank' className='d-flex'>
+                        <button className='bg-transparent rounded-circle '><a href='' target='_blank' className='d-flex'>
                             <lord-icon src="https://cdn.lordicon.com/vduvxizq.json" trigger="hover" colors="primary:#16c72e" style={{width:"70px", height:"70px", transform: "rotate(320deg)"}}></lord-icon></a>
                         </button>
                     </div>
@@ -24,7 +25,7 @@ function Projects() {
                     <div className="text text-white ps-3 mt-lg-0 mt-3">
                         <h3 className='fw-bold fs-1'>Front-end for E-commerce website</h3>
                         <p className='pb-2'>Design and implementation of front-end interfaces for an e-commerce website</p>
-                        <button className='bg-transparent text-white rounded-circle '><a href='' target='_blank' className='d-flex'>
+                        <button className='bg-transparent rounded-circle '><a href='' target='_blank' className='d-flex'>
                             <lord-icon src="https://cdn.lordicon.com/vduvxizq.json" trigger="hover" colors="primary:#16c72e" style={{width:"70px", height:"70px", transform: "rotate(320deg)"}}></lord-icon></a>
                         </button>
                     </div>
@@ -34,11 +35,11 @@ function Projects() {
                     <div className="text text-white ps-3 mt-lg-0 mt-3">
                         <h3 className='fw-bold fs-1'>Front-end for E-commerce website</h3>
                         <p className='pb-2'>Design and implementation of front-end interfaces for an e-commerce website</p>
-                        <button className='bg-transparent text-white rounded-circle '><a href='' target='_blank' className='d-flex'>
+                        <button className='bg-transparent rounded-circle '><a href='' target='_blank' className='d-flex'>
                             <lord-icon src="https://cdn.lordicon.com/vduvxizq.json" trigger="hover" colors="primary:#16c72e" style={{width:"70px", height:"70px", transform: "rotate(320deg)"}}></lord-icon></a>
                         </button>
                     </div>
-                    <img src={megamart} className='rounded-3 img-fluid' />
+                    <img src={burger} className='rounded-3 img-fluid' />
                 </div>
             </div>
         </section>

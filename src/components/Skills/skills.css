@@ -14,10 +14,15 @@
     & .skill-box{
       border: 1px solid #cbcbcb3d;
       width: 450px !important;
+      align-items: center !important;
     }
   }
   @media (max-width: 992px) {
     .skills::before{
       margin: 0 1rem;
+    }
+    .skills .skill-box{
+      width: 300px !important;
+      /* align-items: center !important; */
     }
   }

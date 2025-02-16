@@ -1,5 +1,5 @@
 .header-content, .header-content h1{
-    font-size: 5.5rem !important;
+    font-size: 5.5rem ;
     font-family: Refinery-25 !important;
   }
   header::after{
@@ -13,8 +13,6 @@
     z-index: -1;
   }
   h1 {
-    font-size: 4rem;
-    color: #fff;
     text-shadow: 0 0 5px #00ff0075, 0 0 10px #00ff0075, 0 0 20px #00ff0075, 0 0 40px #00ff0075, 0 0 80px #00ff0075;
     animation: glow 4s infinite alternate;
   }
@@ -88,4 +86,9 @@
       animation: sequencePopup 12s linear infinite;
     }
   } */
-  
+  @media (max-width: 992px) {
+    h1 {
+      font-size: 4rem !important;
+
+    }
+  }
