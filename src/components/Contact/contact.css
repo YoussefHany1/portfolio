@@ -1,4 +1,13 @@
 .contact{
+  &::before{
+    content: "";
+    background: #cbcbcb;
+    display: block;
+    height: 2px;
+    margin-bottom: 12px;
+    opacity: .3;
+    width: 100%;
+  }
     & form{
       font-family: sans-serif;
       max-width: 600px;
@@ -11,7 +20,7 @@
       & .social{
         width: 100%;
         & svg{
-          margin: 0 1rem;
+          margin-right: 1rem;
           width: 100%;
           max-width: 70px;
           transition-duration: 0.3s;
@@ -31,8 +40,8 @@
     }
   }
   .btn-outline-success{
-    --bs-btn-color: #16c72e !important;
-      --bs-btn-border-color: #16c72e !important;
-      --bs-btn-hover-bg: #16c72e !important;
-      --bs-btn-hover-border-color: #16c72e !important;
+    --bs-btn-color: var(--primary) !important;
+      --bs-btn-border-color: var(--primary) !important;
+      --bs-btn-hover-bg: var(--primary) !important;
+      --bs-btn-hover-border-color: var(--primary) !important;
   }

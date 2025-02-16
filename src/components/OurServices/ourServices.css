@@ -14,8 +14,8 @@
   
       transition-duration: 0.3s;
       &:hover{
-        border: 2px solid #16c72e;
-        box-shadow: 0px 0px 20px 5px #16c72e;
+        border: 2px solid var(--primary);
+        box-shadow: 0px 0px 20px 5px var(--primary);
       }
       & p{
         font-family: sans-serif;

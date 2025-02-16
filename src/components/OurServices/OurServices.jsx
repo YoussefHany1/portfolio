@@ -7,7 +7,7 @@ function OurServices() {
 
     return (
         <>
-        <section className='our-services px-3 px-lg-5 '>
+        <section className='our-services px-3 px-lg-5 ' id='services'>
             <h2 className='text-uppercase text-white mt-5 fw-bold mb-0 text-center text-md-start'>Our Services</h2>
             <div className="services d-flex flex-wrap p-5">
                 <div className="box col text-white mx-3 p-4 text-center rounded-3 mb-5 mb-md-0">

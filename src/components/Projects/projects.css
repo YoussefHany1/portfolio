@@ -52,13 +52,13 @@
   }
   .btb-active.project-box::before,
   .project-box:hover::before {
-      border-top-color: #16c72e;
-      border-right-color: #16c72e;
+      border-top-color: var(--primary);
+      border-right-color: var(--primary);
       transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
   }
   .btb-active.project-box::after,
   .project-box:hover::after {
-      border-bottom-color: #16c72e;
-      border-left-color: #16c72e;
+      border-bottom-color: var(--primary);
+      border-left-color: var(--primary);
       transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
   }

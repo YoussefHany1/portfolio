@@ -1,4 +1,3 @@
-/* @import "tailwindcss"; */
 @font-face {
   font-family: BlenderProBook;
   src: url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
@@ -17,7 +16,7 @@
   url('https://www.cyberpunk.net/build/fonts/Refinery-25SemiBold-8a4883af.woff') format("woff")
 }
 :root{
-    --primary: #30e849 ;
+    --primary: #16c72e ;
 
 }
 body{
@@ -41,12 +40,3 @@ canvas{
 header{
   height: 100vh;
 }
-/* Header */
-
-/* our services */
-
-/* skills */
-
-/* projects */
-
-/* contact */

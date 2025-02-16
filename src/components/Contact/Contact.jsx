@@ -22,7 +22,7 @@ function Contact() {
     };
     return (
         <>
-        <section className="contact px-3 px-lg-5">
+        <section className="contact px-3 px-lg-5" id='contact'>
             <h2 className='text-uppercase text-white mt-5 fw-bold text-center text-md-start mb-md-0 mb-5'>Contact Me</h2>
             <div className="contact-content grid p-3 mt-md-5 p-lg-5 mx-lg-5 d-flex flex-column flex-lg-row text-white align-items-center justify-content-between">
                 <form ref={form} onSubmit={sendEmail} className='w-100 text-center mb-lg-0 mb-5 me-lg-5'>
@@ -36,11 +36,11 @@ function Contact() {
                 </form>
                 <div className="box d-flex flex-column align-items-center justify-content-between p-5 rounded-3">
                     <h3 className='text-center mb-0'>More Info</h3>
-                    <div className="social d-flex py-5">
+                    <div className="social d-flex align-items-center py-5">
                         <a href='https://linkedin.com/in/yh5' target='_blank'><svg
                                 viewBox="0 0 16 16"
                                 xmlns="http://www.w3.org/2000/svg"
-                                fill="none">
+                                fill="none" className='ms-0'>
                             <path
                             fill="#16c72e"
                             d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728zM4.67 5.715a1.037 1.037 0 0 1-1.032-1.031c0-.566.466-1.032 1.032-1.032s1.031.466 1.032 1.032c0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78zM13.11 2H2.885A.88.88 0 0 0 2 2.866v10.268a.88.88 0 0 0 .885.866h10.226a.88.88 0 0 0 .889-.866V2.865a.88.88 0 0 0-.889-.864z"
@@ -77,7 +77,8 @@ function Contact() {
                         </svg></a>
                         <a href='https://www.facebook.com/youssef.hany0' target='_blank'><svg
                             viewBox="-6 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
+                            xmlns="http://www.w3.org/2000/svg"
+                            className='me-0'>
                             <path fill="#16c72e" d="M12.462.173v3.808h-2.265a2.11 2.11 0 0 0-1.675.521l.002-.002a2.37 2.37 0 0 0-.432 1.566v-.008 2.726h4.229l-.56 4.27H8.098V24H3.681V13.053H.001V8.784h3.68V5.639a5.56 5.56 0 0 1 1.502-4.162l-.003.003A5.42 5.42 0 0 1 9.185.002h-.013a24 24 0 0 1 3.406.185l-.117-.012z" />
                         </svg></a>
                     </div>
