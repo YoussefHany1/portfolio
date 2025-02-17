@@ -19,6 +19,9 @@
       background-color: #cbcbcb1a;
       & .social{
         width: 100%;
+        & .whatsapp{
+          max-width: 60px;
+        }
         & svg{
           margin-right: 1rem;
           width: 100%;
@@ -44,4 +47,8 @@
       --bs-btn-border-color: var(--primary) !important;
       --bs-btn-hover-bg: var(--primary) !important;
       --bs-btn-hover-border-color: var(--primary) !important;
+    --bs-btn-active-bg: var(--primary) !important;
+    --bs-btn-active-border-color: var(--primary) !important;
+    --bs-btn-disabled-color: var(--primary) !important;
+    --bs-btn-disabled-border-color: var(--primary) !important;
   }

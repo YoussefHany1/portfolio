@@ -1,7 +1,10 @@
+a{
+  color: white !important; 
+}
 .nav-bg{
-    background: linear-gradient(180deg, rgba(0, 0, 0, .65), transparent);
-    height: 112px;
-  }
+  background: linear-gradient(180deg, rgba(0, 0, 0, .65), transparent);
+  height: 112px;
+}
   .navbar button{
     background-color: var(--primary);
   }

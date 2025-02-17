@@ -20,7 +20,7 @@ function Navbar() {
     <>
     <nav className = {`navbar navbar-expand-lg py-4 position-fixed vw-100 z-3 ${scrolled ? "nav-bg" : ""}`} id='navbar'>
       <div className="container-fluid px-4 px-lg-5">
-        <a className="navbar-brand fw-bold fs-4" href='#'>Youssef Hany</a>
+        <a className="navbar-brand text-white fw-bold fs-4" href='#'>Youssef Hany</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>

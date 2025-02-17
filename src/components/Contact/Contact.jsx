@@ -49,7 +49,8 @@ function Contact() {
                         <a href='https://wa.me/qr/UET75FACE2XCH1' target='_blank'><svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 418.135 418.135"
-                            xmlSpace="preserve">
+                            xmlSpace="preserve"
+                            className='whatsapp'>
                             <path
                             style={{
                                 fill: "#16c72e",
@@ -82,7 +83,7 @@ function Contact() {
                             <path fill="#16c72e" d="M12.462.173v3.808h-2.265a2.11 2.11 0 0 0-1.675.521l.002-.002a2.37 2.37 0 0 0-.432 1.566v-.008 2.726h4.229l-.56 4.27H8.098V24H3.681V13.053H.001V8.784h3.68V5.639a5.56 5.56 0 0 1 1.502-4.162l-.003.003A5.42 5.42 0 0 1 9.185.002h-.013a24 24 0 0 1 3.406.185l-.117-.012z" />
                         </svg></a>
                     </div>
-                    <button type="button" className='download rounded-3 btn btn-outline-success p-2'><a href='https://drive.google.com/uc?export=download&id=1XDS6f9-G5DR67CMaSpmAjAfuvMCPvQf2' className='text-decoration-none'>
+                    <button type="button" className='download rounded-3 btn btn-outline-success p-2'><a href='https://drive.google.com/uc?export=download&id=1XDS6f9-G5DR67CMaSpmAjAfuvMCPvQf2' className='text-decoration-none text-white'>
                     <svg
                         viewBox="-5 -5 24 24"
                         xmlns="http://www.w3.org/2000/svg"
