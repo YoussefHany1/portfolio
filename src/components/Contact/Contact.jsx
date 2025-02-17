@@ -34,7 +34,7 @@ function Contact() {
                     <textarea name="message" placeholder='Message' className='w-100 p-3 mb-3 rounded-3' required /><br />
                     <input type="submit" value="Send" className='send text-white rounded-3 p-2 px-3 btn btn-outline-success' />
                 </form>
-                <div className="box d-flex flex-column align-items-center justify-content-between p-5 rounded-3">
+                <div className="box d-flex flex-column align-items-center justify-content-between p-lg-5 p-4 rounded-3">
                     <h3 className='text-center mb-0'>More Info</h3>
                     <div className="social d-flex align-items-center py-5">
                         <a href='https://linkedin.com/in/yh5' target='_blank'><svg
