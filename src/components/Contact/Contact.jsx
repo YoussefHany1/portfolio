@@ -1,25 +1,37 @@
 import './contact.css'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
 function Contact() {
     const form = useRef();
-
     const sendEmail = (e) => {
         e.preventDefault();
-
+    
         emailjs
         .sendForm('service_d9fi5h5', 'template_379ze2i', form.current, {
             publicKey: 'JsYo5gWJhvJMfMTfm',
         })
         .then(
-        () => {
-            console.log('SUCCESS!');
-        },
-        (error) => {
-            console.log('FAILED...', error.text);
+            () => {
+            Swal.fire({
+                title: 'successful!',
+                text: 'the email has been sent successfully.',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
             },
+            (error) => {
+            Swal.fire({
+                title: 'Error',
+                text: 'Message was not sent, please try again.',
+                icon: 'error',
+                confirmButtonText: 'OK'
+            });
+            console.error('FAILED...', error.text);
+            }
         );
     };
+    
     return (
         <>
         <section className="contact px-3 px-lg-5" id='contact'>
@@ -31,7 +43,7 @@ function Contact() {
                     <label hidden>Email</label>
                     <input type="email" name="email" placeholder='Email' className='w-100 p-2 mb-3 rounded-3' required /><br />
                     <label hidden>Message</label>
-                    <textarea name="message" placeholder='Message' className='w-100 p-3 mb-3 rounded-3' required /><br />
+                    <textarea name="message" placeholder='Message' className='w-100 p-3 mb-4 rounded-3' required /><br />
                     <input type="submit" value="Send" className='send text-white rounded-3 p-2 px-3 btn btn-outline-success' />
                 </form>
                 <div className="box d-flex flex-column align-items-center justify-content-between p-lg-5 p-4 rounded-3">
