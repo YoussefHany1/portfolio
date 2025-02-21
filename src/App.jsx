@@ -1,10 +1,10 @@
-import Navbar from './components/Navbar/Navbar'
-import Header from './components/Header/Header'
-import OurServices from './components/OurServices/OurServices'
-import Skills from './components/Skills/Skills'
-import Projects from './components/Projects/Projects'
-import Contact from './components/Contact/Contact'
-import Footer from './components/Footer/Footer'
+import Navbar from './components/Navbar/Navbar.jsx'
+import Header from './components/Header/Header.jsx'
+import OurServices from './components/OurServices/OurServices.jsx'
+import Skills from './components/Skills/Skills.jsx'
+import Projects from './components/Projects/Projects.jsx'
+import Contact from './components/Contact/Contact.jsx'
+import Footer from './components/Footer/Footer.jsx'
 import './App.css'
 
 // Background Matrix Rain

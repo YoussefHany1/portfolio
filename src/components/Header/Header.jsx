@@ -1,5 +1,5 @@
 import './header.css'
-import { DecryptText } from '../DecryptText';
+import { DecryptText } from '../DecryptText.tsx';
 function Header() {
 
   return (
