@@ -1,19 +1,28 @@
 @font-face {
-  font-family: BlenderProBook;
-  src: url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
-  src: url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.svg#Blender Pro Book")format("svg");
+  font-family: "BlenderProBook";
+  src: url("/fonts/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
+  src: url("/fonts/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix")
+         format("embedded-opentype"),
+       url("/fonts/335787aa6f57d71cabe8eb5dc89c6d6b.woff2")
+         format("woff2"),
+       url("/fonts/335787aa6f57d71cabe8eb5dc89c6d6b.woff")
+         format("woff"),
+       url("/fonts/335787aa6f57d71cabe8eb5dc89c6d6b.ttf")
+         format("truetype"),
+       url("/fonts/335787aa6f57d71cabe8eb5dc89c6d6b.svg#Blender Pro Book")
+         format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-@font-face{
-  font-display:swap;
-  font-family:Refinery-25;
-  font-style:normal;
-  font-weight:600;
-  src:url('https://www.cyberpunk.net/build/fonts/Refinery-25SemiBold-dac0d12b.woff2') format("woff2"),
-  url('https://www.cyberpunk.net/build/fonts/Refinery-25SemiBold-8a4883af.woff') format("woff")
+
+@font-face {
+  font-family: "Refinery-25";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/Refinery-25SemiBold.woff2") format("woff2"),
+       url("/fonts/Refinery-25SemiBold.woff")  format("woff");
 }
 :root{
     --primary: #16c72e ;
