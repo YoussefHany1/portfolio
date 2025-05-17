@@ -15,7 +15,7 @@ function Projects() {
                     <div className="text text-white ps-lg-4 mt-lg-0 mt-3 text-lg-start text-center">
                         <h3 className='fw-bold fs-1'>Modern E-commerce website</h3>
                         <p className='pb-2'>A clean and responsive e-commerce website designed for a seamless shopping experience. This project features a user-friendly interface, product categories, a search bar, and an interactive shopping cart. Built with modern front-end technologies to ensure speed and accessibility.</p>
-                        <button className='bg-transparent rounded-circle '><a href='https://youssefhany1.github.io/MegaMart/' target='_blank' className='d-flex'>
+                        <button className='bg-transparent rounded-circle '><a href='https://megamart1.vercel.app/' target='_blank' className='d-flex'>
                             <lord-icon src="https://cdn.lordicon.com/vduvxizq.json" trigger="hover" colors="primary:#16c72e" style={{width:"70px", height:"70px", transform: "rotate(320deg)"}}></lord-icon></a>
                         </button>
                     </div>
