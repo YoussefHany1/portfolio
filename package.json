@@ -1,13 +1,9 @@
 {
-  "homepage": "https://YoussefHany1.github.io/portfolio",
-  "name": "react-st",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -17,22 +13,14 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@lordicon/element": "^1.10.1",
-    "@lordicon/react": "^1.10.1",
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "bootstrap": "^5.3.3",
-    "lord-icon-element": "^4.1.2",
     "lottie-web": "^5.12.2",
-    "lucide-react": "0.294.0",
     "react": "^18.3.1",
-    "react-bits": "^1.0.5",
     "react-dom": "^18.3.1",
-    "react-scripts": "^5.0.1",
-    "react-svg-path": "^1.14.0",
-    "sweetalert2": "^11.17.2",
-    "sweetalert2-react-content": "^5.1.0"
+    "sweetalert2": "^11.17.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

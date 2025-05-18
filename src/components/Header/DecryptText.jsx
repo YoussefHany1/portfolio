@@ -1,23 +1,17 @@
 import { useState, useEffect } from 'react';
 
-interface DecryptTextProps {
-  text: string;
-  speed?: number;
-  className?: string;
-}
-
 const randomChar = () => {
   const chars = '!@#$%^&*()_+-=[]{}|;:,.<>?/~`ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
   return chars[Math.floor(Math.random() * chars.length)];
 };
 
-export function DecryptText({ text, speed = 50, className = '' }: DecryptTextProps) {
+export function DecryptText({ text, speed = 50, className = '' }) {
   const [displayText, setDisplayText] = useState('');
   const [isDecrypting, setIsDecrypting] = useState(true);
 
   useEffect(() => {
     let currentIndex = 0;
-    let scrambleInterval: number;
+    let scrambleInterval;
     let finalText = '';
 
     const startDecryption = () => {
