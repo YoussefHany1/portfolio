@@ -1,10 +1,7 @@
 import Navbar from './components/Navbar/Navbar.jsx'
-import Header from './components/Header/Header.jsx'
-import OurServices from './components/OurServices/OurServices.jsx'
-import Skills from './components/Skills/Skills.jsx'
-import Projects from './components/Projects/Projects.jsx'
-import Contact from './components/Contact/Contact.jsx'
 import Footer from './components/Footer/Footer.jsx'
+import Home from './pages/home.jsx'
+
 import './App.css'
 
 // Background Matrix Rain
@@ -48,11 +45,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Header />
-      <OurServices />
-      <Skills />
-      <Projects />
-      <Contact />
+        <Home />
       <Footer />
     </>
   )
