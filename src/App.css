@@ -14,7 +14,7 @@
   src: url(/public/fonts/Refinery-25SemiBold-dac0d12b.woff2) format("woff2"),url(/public/fonts/Refinery-25SemiBold-8a4883af.woff) format("woff")
 }
 :root{
-    --primary: #16c72e ;
+    --primary: #16c72e;
 }
 body{
     background-color: black !important;
