@@ -1,7 +1,4 @@
 import styles from './ourServices.module.css'
-import lottie from 'lottie-web';
-import { defineElement } from "@lordicon/element";
-defineElement(lottie.loadAnimation);
 
 function OurServices() {
 
