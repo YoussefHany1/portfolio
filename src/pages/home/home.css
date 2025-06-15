@@ -1,4 +1,3 @@
-input{
+input, textarea{
     outline-color: var(--primary);
-    /* border-color: var(--primary); */
 }
