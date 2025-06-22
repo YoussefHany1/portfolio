@@ -22,3 +22,11 @@
     color: #adb5bd;
   }
 }
+@media (max-width: 992px){
+  .box{
+    border: 2px solid var(--primary);
+    &:hover{
+      box-shadow: none;
+    }
+  }
+}

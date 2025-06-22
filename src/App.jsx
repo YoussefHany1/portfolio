@@ -5,7 +5,6 @@ import Footer from './components/Footer/Footer.jsx'
 import Home from './pages/home/Home.jsx'
 import Projects from './pages/projects/Projects.jsx'
 import './App.css'
-import './assets/background.css';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -41,7 +40,6 @@ if (loading) {
             </Routes>
         </Router>
       <Footer />
-      <div className="background-gradient"></div>
     </>
   )
 }
