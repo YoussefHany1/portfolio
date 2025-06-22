@@ -10,6 +10,11 @@ export function DecryptText({ text, speed = 50, className = '' }) {
   const [isDecrypting, setIsDecrypting] = useState(true);
 
   useEffect(() => {
+    if (screen.width <= 576) {
+      setDisplayText(text);
+      setIsDecrypting(false);
+      return;
+    }
     let currentIndex = 0;
     let scrambleInterval;
     let finalText = '';
