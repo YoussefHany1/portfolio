@@ -19,7 +19,9 @@
         }
       }
       & img:not(.pics img){
-        width: 600px;
+        width: 100%;
+        max-width: 600px;
+                    min-width: 300px;
       }
       & p{
         font-family: sans-serif;
@@ -111,5 +113,9 @@
   }
   .sticky-top{
     position: static !important;
+  }
+  .btn-group{
+    display: flex !important;
+    justify-content: space-evenly;
   }
 }

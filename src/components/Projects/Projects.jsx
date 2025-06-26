@@ -10,7 +10,7 @@ function Projects() {
         <>
             <section className="projects px-3 px-lg-5" id='projects'>
                 <h2 className='text-uppercase text-white mt-5 fw-bold mb-0 text-center text-md-start'>My Projects</h2>
-                <div className="project-content p-5 d-flex flex-column gap-5">
+                <div className="project-content p-5 d-flex flex-column align-items-center gap-5">
                     {/* first project */}
                     <div className="project-box position-relative d-flex justify-content-between align-items-center p-4 rounded-3 flex-lg-row flex-column-reverse">
                         <div className="text text-white ps-lg-4 mt-lg-0 mt-3 text-lg-start text-center">
@@ -20,14 +20,16 @@ function Projects() {
                                 <lord-icon src="https://cdn.lordicon.com/vduvxizq.json" trigger="hover" colors="primary:#16c72e" style={{ width: "70px", height: "70px", transform: "rotate(320deg)" }}></lord-icon>
                             </button>
                             <div className="modal fade" id="megamart" tabIndex="-1" aria-labelledby="megamartLabel" aria-hidden="true">
-                                <div className="modal-dialog modal-dialog-centered">
+                                <div className="modal-dialog modal-dialog-centered m-auto">
                                     <div className="modal-content bg-dark">
-                                        <div className="modal-header px-5 bg-black">
-                                            <h2 className="modal-title fs-1 fw-bold" id="megamartLabel">MegaMart – Responsive Next.js E-commerce Front-End</h2>
-                                            <button type="button" className="btn-close bg-white me-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <div className="modal-header flex-wrap px-5 bg-black text-start">
+                                            <div className='d-flex justify-content-between align-items-center w-100'>
+                                                <h2 className="modal-title fs-1 fw-bold" id="megamartLabel">MegaMart – Responsive Next.js E-commerce Front-End</h2>
+                                                <button type="button" className="btn-close bg-white m-0 px-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
                                         </div>
-                                        <div className="modal-body row p-0 text-lg-start text-center">
-                                            <div className="description col-12 col-lg-4 ps-5 pe-5 pe-lg-0 sticky-top p-4">
+                                        <div className="modal-body row p-0 text-start">
+                                            <div className="description col-12 col-lg-4 ps-lg-5 py-4 px-5 sticky-top">
                                                 <h5>Project description.</h5>
                                                 <p>Overview<br />
                                                     MegaMart is a modern, performance-optimized front-end e-commerce application designed to deliver a seamless shopping experience across devices. Built with Next.js (v14 App Router) and styled with Bootstrap 5, the project leverages both server-side rendering (SSR) and static site generation (SSG) to balance SEO needs and fast page loads.<br />
@@ -64,7 +66,7 @@ function Projects() {
                                                 </p>
                                                 <div className="skills pt-3">
                                                     <h5>Skills and deliverables</h5>
-                                                    <ul className='list-unstyled d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start'>
+                                                    <ul className='list-unstyled d-flex flex-wrap gap-2'>
                                                         <li className='px-3 py-1 rounded-4'>React.js</li>
                                                         <li className='px-3 py-1 rounded-4'>NextJS</li>
                                                         <li className='px-3 py-1 rounded-4'>Bootstrap</li>
@@ -106,14 +108,16 @@ function Projects() {
                                 <lord-icon src="https://cdn.lordicon.com/vduvxizq.json" trigger="hover" colors="primary:#16c72e" style={{ width: "70px", height: "70px", transform: "rotate(320deg)" }}></lord-icon>
                             </button>
                             <div className="modal fade" id="mohid" tabIndex="-1" aria-labelledby="mohidLabel" aria-hidden="true">
-                                <div className="modal-dialog modal-dialog-centered">
+                                <div className="modal-dialog modal-dialog-centered m-auto">
                                     <div className="modal-content bg-dark">
-                                        <div className="modal-header px-5 bg-black">
-                                            <h2 className="modal-title fs-1 fw-bold text-white" id="mohidLabel"> Mohid Smartwatch E-Commerce Landing Page</h2>
-                                            <button type="button" className="btn-close bg-white me-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <div className="modal-header flex-wrap px-5 bg-black text-start">
+                                            <div className="d-flex justify-content-between align-items-center w-100">
+                                                <h2 className="modal-title fs-1 fw-bold text-white" id="mohidLabel"> Mohid Smartwatch E-Commerce Landing Page</h2>
+                                                <button type="button" className="btn-close bg-white m-0 px-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
                                         </div>
-                                        <div className="modal-body row p-0 text-lg-start text-center">
-                                            <div className="description col-12 col-lg-4 ps-5 pe-5 pe-lg-0 sticky-top p-4">
+                                        <div className="modal-body row p-0 text-start">
+                                            <div className="description col-12 col-lg-4 ps-lg-5 py-4 px-5 sticky-top">
                                                 <h5 className='text-white'>Project description.</h5>
                                                 <p>Overview:<br />
                                                     Mohid is a responsive, single-page landing site prototype for an online smartwatch store. Built with Bootstrap and custom CSS, it showcases featured brands, highlights the latest products, includes customer testimonials, and invites visitors to subscribe to a newsletter.
@@ -177,7 +181,7 @@ function Projects() {
                                                 </p>
                                                 <div className="skills pt-3 text-white">
                                                     <h5>Skills and deliverables</h5>
-                                                    <ul className='list-unstyled d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start'>
+                                                    <ul className='list-unstyled d-flex flex-wrap gap-2'>
                                                         <li className='px-3 py-1 rounded-4'>Bootstrap</li>
                                                         <li className='px-3 py-1 rounded-4'>JavaScript</li>
                                                         <li className='px-3 py-1 rounded-4'>CSS</li>
@@ -215,14 +219,16 @@ function Projects() {
                                 <lord-icon src="https://cdn.lordicon.com/vduvxizq.json" trigger="hover" colors="primary:#16c72e" style={{ width: "70px", height: "70px", transform: "rotate(320deg)" }}></lord-icon>
                             </button>
                             <div className="modal fade" id="burger" tabIndex="-1" aria-labelledby="burgerLabel" aria-hidden="true">
-                                <div className="modal-dialog modal-dialog-centered">
+                                <div className="modal-dialog modal-dialog-centered m-auto">
                                     <div className="modal-content bg-dark">
-                                        <div className="modal-header px-5 bg-black">
-                                            <h2 className="modal-title fs-1 fw-bold text-white" id="burgerLabel">Burger Restaurant Landing Page</h2>
-                                            <button type="button" className="btn-close bg-white me-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <div className="modal-header flex-wrap px-5 bg-black text-start">
+                                            <div className='d-flex justify-content-between align-items-center w-100'>
+                                                <h2 className="modal-title fs-1 fw-bold text-white ps-3" id="burgerLabel">Burger Restaurant Landing Page</h2>
+                                                <button type="button" className="btn-close bg-white px-3 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
                                         </div>
-                                        <div className="modal-body row p-0 text-lg-start text-center">
-                                            <div className="description col-12 col-lg-4 ps-5 pe-5 pe-lg-0 sticky-top p-4">
+                                        <div className="modal-body row p-0 text-start">
+                                            <div className="description col-12 col-lg-4 ps-lg-5 py-4 px-5 sticky-top">
                                                 <h5 className='text-white'>Project description.</h5>
                                                 <p>Overview:<br />
                                                     This project delivers a sleek, modern landing page for a gourmet burger brand. The design uses a dark, moody background to let vibrant burger photography stand out, inviting visitors to “wake up their taste buds” and explore the menu. Built with semantic HTML5, Bootstrap 5, and custom CSS, the page is fully responsive—ensuring an optimized experience across desktop, tablet, and mobile screens.
@@ -261,7 +267,7 @@ function Projects() {
                                                 </p>
                                                 <div className="skills pt-3 text-white">
                                                     <h5>Skills and deliverables</h5>
-                                                    <ul className='list-unstyled d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start'>
+                                                    <ul className='list-unstyled d-flex flex-wrap gap-2'>
                                                         <li className='px-3 py-1 rounded-4'>HTML</li>
                                                         <li className='px-3 py-1 rounded-4'>CSS</li>
                                                         <li className='px-3 py-1 rounded-4'>Bootstrap</li>
