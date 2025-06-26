@@ -83,12 +83,12 @@ function Projects() {
                                                 </div>
                                             </div>
                                             <div className="pics col-12 col-lg-8 px-5 mt-4">
-                                                <img src='../../../public/screenshots/megamart/1.jpeg' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
-                                                <img src='../../../public/screenshots/megamart/2.jpeg' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
-                                                <img src='../../../public/screenshots/megamart/3.jpeg' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
-                                                <img src='../../../public/screenshots/megamart/4.png' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
-                                                <img src='../../../public/screenshots/megamart/5.jpeg' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
-                                                <img src='../../../public/screenshots/megamart/6.png' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
+                                                <img src='/screenshots/megamart/1.jpeg' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
+                                                <img src='/screenshots/megamart/2.jpeg' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
+                                                <img src='/screenshots/megamart/3.jpeg' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
+                                                <img src='/screenshots/megamart/4.png' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
+                                                <img src='/screenshots/megamart/5.jpeg' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
+                                                <img src='/screenshots/megamart/6.png' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
                                             </div>
                                         </div>
                                     </div>
@@ -194,10 +194,10 @@ function Projects() {
                                                 </div>
                                             </div>
                                             <div className="pics col-12 col-lg-8 px-5 mt-4">
-                                                <img src='../../../public/screenshots/mohid/1.jpeg' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
-                                                <img src='../../../public/screenshots/mohid/2.jpeg' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
-                                                <img src='../../../public/screenshots/mohid/3.jpeg' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
-                                                <img src='../../../public/screenshots/mohid/4.jpeg' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
+                                                <img src='/screenshots/mohid/1.jpeg' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
+                                                <img src='/screenshots/mohid/2.jpeg' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
+                                                <img src='/screenshots/mohid/3.jpeg' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
+                                                <img src='/screenshots/mohid/4.jpeg' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
                                             </div>
                                         </div>
                                     </div>
@@ -277,7 +277,7 @@ function Projects() {
                                                 </div>
                                             </div>
                                             <div className="pics col-12 col-lg-8 px-5 mt-4">
-                                                <img src='../../../public/screenshots/3.png' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
+                                                <img src='/screenshots/3.png' className='img-fluid rounded-3 mb-4' alt='Screenshot of the project' />
                                             </div>
                                         </div>
                                     </div>
