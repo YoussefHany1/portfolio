@@ -14,11 +14,11 @@
       & button{
         border: 2px solid #cbcbcb2f;
         transition-duration: .3s;
-        &:hover{
+        &:hover:not(.modal button){
           border: 2px solid #16c72e30;
         }
       }
-      & img{
+      & img:not(.pics img){
         width: 600px;
       }
       & p{
@@ -71,6 +71,31 @@
     content: "";
   }
 
+.modal-header{
+  border-color: #cbcbcb3d !important;
+}
+.modal-dialog{
+  max-width: 90% !important;
+}
+.modal-content{
+  border: 1px solid #cbcbcb3d !important;
+}
+.projects .skills ul li{
+  background-color: #333333;
+}
+.description{
+  position: sticky;
+  position: -webkit-sticky;
+  height: 100%;
+  float: left;
+}
+.btn-group a{
+  border-color: #cbcbcb3d !important;
+  transition-duration: 0.2s;
+  &:hover{
+    border-color: var(--primary) !important;
+  }
+}
 
 @media (max-width: 992px){
   .btb-active.project-box::before, .project-box:hover::before{
@@ -83,5 +108,8 @@
       &:hover{
         border: 2px solid #cbcbcb2f;
       }
+  }
+  .sticky-top{
+    position: static !important;
   }
 }

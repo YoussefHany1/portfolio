@@ -6,7 +6,7 @@
   header::after{
     content: "";
     display: block;
-    background: linear-gradient(180deg, transparent, #000);
+    background: linear-gradient(180deg, transparent, #101010 80%);
     bottom: -53px;
     height: 302px;
     position: absolute;

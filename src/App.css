@@ -1,3 +1,4 @@
+/* @import "tailwindcss"; */
 @font-face {
   font-family: "Blender Pro Book";
   src: url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
@@ -17,7 +18,7 @@
     --primary: #16c72e;
 }
 body{
-    background-color: black !important;
+    background-color: #101010 !important;
     font-family: "Blender Pro Book", "sans-serif"  !important;
 }
 ::-webkit-scrollbar {
@@ -31,7 +32,7 @@ canvas{
   opacity: 0.5;
 }
 header{
-  height: 100vh;
+  /* height: 100vh; */
   height: calc(var(--vh, 1vh) * 100);
 }
 .glitch {

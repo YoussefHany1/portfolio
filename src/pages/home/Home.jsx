@@ -27,7 +27,7 @@ for (var i = 0; i < columns; i++) {
 
 // Setting up the draw function
 function draw() {
-  ctx.fillStyle = 'rgba(0, 0, 0, .1)';
+  ctx.fillStyle = 'rgb(16, 16, 16, .1)';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   for (var i = 0; i < drops.length; i++) {
     var text = letters[Math.floor(Math.random() * letters.length)];
@@ -48,11 +48,11 @@ setInterval(draw, 33);
 function Home() {
     return (
       <>
-      <Header />
-      <OurServices />
-      <Skills />
-      <Projects />
-      <Contact />
+        <Header />
+        <OurServices />
+        <Skills />
+        <Projects />
+        <Contact />
       </>
     )
   }

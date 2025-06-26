@@ -50,10 +50,10 @@ function Contact() {
                     <h3 className='text-center mb-0'>More Info</h3>
                     <div className={`social d-flex align-items-center py-5 ${styles.social}`}>
                         <a href='https://linkedin.com/in/yh5' target='_blank'>
-                            <lord-icon src="https://cdn.lordicon.com/xerxcacw.json" trigger="hover" state="hover-draw" colors="primary:#16c72e,secondary:#151515,tertiary:#16c72e" style={{width: "70px", height: "70px"}}></lord-icon>
+                            <lord-icon src="https://cdn.lordicon.com/xerxcacw.json" trigger="hover" state="hover-draw" colors="primary:#16c72e,secondary:#232323,tertiary:#16c72e" style={{width: "70px", height: "70px"}}></lord-icon>
                         </a>
                         <a href='https://github.com/YoussefHany1' target='_blank'>
-                            <lord-icon src="https://cdn.lordicon.com/lllcnxva.json" trigger="hover" colors="primary:#121331,secondary:#151515,tertiary:#16c72e" style={{width:"70px", height:"70px"}}></lord-icon>
+                            <lord-icon src="https://cdn.lordicon.com/lllcnxva.json" trigger="hover" colors="primary:#121331,secondary:#232323,tertiary:#16c72e" style={{width:"70px", height:"70px"}}></lord-icon>
                         </a>
                         <a href='https://wa.me/qr/UET75FACE2XCH1' target='_blank'>
                             <lord-icon src="https://cdn.lordicon.com/qtenrimd.json" trigger="hover" stroke="light" colors="primary:#121331,secondary:#16c72e,tertiary:#ebe6ef" style={{width: "70px", height: "70px"}}></lord-icon>
