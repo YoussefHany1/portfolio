@@ -1,32 +1,34 @@
-.navbar{
-  background: linear-gradient(180deg, rgba(16, 16, 16, .65), transparent);
+.navbar {
+  background: linear-gradient(180deg, rgba(16, 16, 16, 0.65), transparent);
   height: 112px;
 }
-.navbar button{
+.navbar button {
   background-color: var(--primary);
 }
 .navbarBrand::before {
   margin-left: auto;
 }
-.navbarBrand::after, .navbarBrand::before {
-  content: '';
+.navbarBrand::after,
+.navbarBrand::before {
+  content: "";
   width: 0%;
   height: 2px;
   background: var(--primary);
   display: block;
   transition: 0.5s;
 }
-.navbarBrand:hover::after, .navbarBrand:hover::before {
+.navbarBrand:hover::after,
+.navbarBrand:hover::before {
   width: 100%;
 }
 
-.navItem{
+.navItem {
   border-radius: 10px;
-  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .navItem::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   margin: auto;
@@ -36,7 +38,7 @@
   scale: 0;
   z-index: -1;
   background-color: var(--primary);
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .navItem:hover::before {
@@ -45,49 +47,56 @@
 
 .navItem:hover {
   transition-delay: 0.1s;
-  color: #212121;
   box-shadow: 0 0px 20px var(--primary);
 }
 
-.menu{
+.menu {
   display: flex;
-  clip-path: polygon(16px 0px, 100% 0px, 100% 30px,
-  calc(100% - 18px) 48px,
-  0px 1000%, 0px 16px
+  clip-path: polygon(
+    16px 0px,
+    100% 0px,
+    100% 30px,
+    calc(100% - 18px) 48px,
+    0px 1000%,
+    0px 16px
   );
 }
-.menuList{
+.menuList {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: solid 1px var(--primary);
   background: rgba(16, 16, 16, 0.5);
 }
-.menuList::before{
+.menuList::before {
   content: "";
   border-right: 1rem solid transparent;
   border-top: 1rem solid var(--primary);
 }
-.menuList::after{
+.menuList::after {
   content: "";
   border-left: 1.6rem solid transparent;
   border-bottom: 1.6rem solid var(--primary);
 }
 
-
-
-
 @media (max-width: 992px) {
-  .menu{
+  .menu {
     justify-content: flex-end;
     clip-path: none;
   }
-  .menuList::before,.menuList::after{
+  .menuList::before,
+  .menuList::after {
     display: none;
   }
-  .navItem{
+  .navItem {
     padding: 1rem 3rem !important;
-    & a{
+    & a {
       font-size: 2rem !important;
     }
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  .navItem::before {
+    content: none;
   }
 }

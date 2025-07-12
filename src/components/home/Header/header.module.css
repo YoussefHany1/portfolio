@@ -1,0 +1,169 @@
+.headerContent h1 {
+  font-size: 5.5rem;
+  font-family: Refinery-25 !important;
+  animation: glow 3s infinite alternate;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  background: linear-gradient(180deg, transparent, #101010 80%);
+  bottom: -53px;
+  height: 302px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.typewriter::before {
+  content: "";
+  animation: typing 13s infinite;
+}
+.typewriter::after {
+  content: "";
+  border-right: 1px solid white;
+  animation: blink 0.7s linear infinite;
+  height: 30px;
+  display: inline-block;
+}
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #00ff0075, 0 0 3px #00ff0075, 0 0 13px #00ff0075,
+      0 0 15px #00ff0075, 0 0 60px #00ff0075;
+  }
+  100% {
+    text-shadow: 0 0 10px #00ff0075, 0 0 50px #00ff0075, 0 0 20px #00ff0075,
+      0 0 50px #00ff0075, 0 0 140px #00ff0075;
+  }
+}
+@keyframes typing {
+  0%,
+  20% {
+    content: "";
+  }
+  1%,
+  19% {
+    content: "m";
+  }
+  2%,
+  18% {
+    content: "ma";
+  }
+  3%,
+  17% {
+    content: "mag";
+  }
+  4%,
+  16% {
+    content: "magi";
+  }
+  5%,
+  15% {
+    content: "magic";
+  }
+
+  27%,
+  55% {
+    content: "";
+  }
+  28%,
+  54% {
+    content: "f";
+  }
+  29%,
+  53% {
+    content: "fa";
+  }
+  30%,
+  52% {
+    content: "fan";
+  }
+  31%,
+  51% {
+    content: "fant";
+  }
+  32%,
+  50% {
+    content: "fanta";
+  }
+  33%,
+  49% {
+    content: "fantas";
+  }
+  34%,
+  48% {
+    content: "fantast";
+  }
+  35%,
+  47% {
+    content: "fantasti";
+  }
+  36%,
+  46% {
+    content: "fantastic";
+  }
+
+  62%,
+  92% {
+    content: "";
+  }
+  63%,
+  91% {
+    content: "c";
+  }
+  64%,
+  90% {
+    content: "cr";
+  }
+  65%,
+  89% {
+    content: "cre";
+  }
+  66%,
+  88% {
+    content: "crea";
+  }
+  67%,
+  87% {
+    content: "creat";
+  }
+  68%,
+  86% {
+    content: "creati";
+  }
+  69%,
+  85% {
+    content: "creativ";
+  }
+  70%,
+  84% {
+    content: "creativi";
+  }
+  71%,
+  83% {
+    content: "creativit";
+  }
+  72%,
+  82% {
+    content: "creativity";
+  }
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@media (max-width: 992px) {
+  .headerContent h1 {
+    font-size: 4rem !important;
+    animation: none;
+    text-shadow: 0 0 5px #00ff0075, 0 0 10px #00ff0075, 0 0 20px #00ff0075,
+      0 0 40px #00ff0075, 0 0 80px #00ff0075;
+  }
+  .headerContent h2 {
+    font-size: 1.2rem;
+  }
+}

@@ -2,38 +2,45 @@
 @font-face {
   font-family: "Blender Pro Book";
   src: url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
-  src: url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf")format("truetype"),
+  src: url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf")
+      format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: Refinery-25;
   font-style: normal;
   font-weight: 600;
-  src: url(/public/fonts/Refinery-25SemiBold-dac0d12b.woff2) format("woff2"),url(/public/fonts/Refinery-25SemiBold-8a4883af.woff) format("woff")
+  src: url(/fonts/Refinery-25SemiBold-dac0d12b.woff2) format("woff2"),
+    url(/fonts/Refinery-25SemiBold-8a4883af.woff) format("woff");
 }
-:root{
-    --primary: #16c72e;
+:root {
+  --primary: #16c72e;
 }
-body{
-    background-color: #101010 !important;
-    font-family: "Blender Pro Book", "sans-serif"  !important;
+body {
+  background-color: #101010 !important;
+  font-family: "Blender Pro Book", "sans-serif" !important;
 }
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--primary); 
+  background: var(--primary);
 }
-canvas{
+canvas {
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.3;
 }
-header{
-  /* height: 100vh; */
-  height: calc(var(--vh, 1vh) * 100);
+header {
+  height: 100vh;
+}
+footer {
+  background: linear-gradient(0deg, var(--primary) -704%, transparent 100%);
 }
 .glitch {
   position: relative;
@@ -45,7 +52,6 @@ header{
   z-index: 1;
   animation: shift 1s ease-in-out infinite alternate;
 }
-
 .glitch:before,
 .glitch:after {
   display: block;
@@ -55,15 +61,14 @@ header{
   left: 0;
   opacity: 0.8;
 }
-
 .glitch:before {
   animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
   color: #8b00ff;
   z-index: -1;
 }
-
 .glitch:after {
-  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
+    infinite;
   color: #00e571;
   z-index: -2;
 }
@@ -93,9 +98,16 @@ header{
     transform: translate(0);
   }
 }
-
 @keyframes shift {
-  0%, 40%, 44%, 58%, 61%, 65%, 69%, 73%, 100% {
+  0%,
+  40%,
+  44%,
+  58%,
+  61%,
+  65%,
+  69%,
+  73%,
+  100% {
     transform: skewX(0deg);
   }
 

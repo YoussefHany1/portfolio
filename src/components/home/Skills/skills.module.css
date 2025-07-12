@@ -1,27 +1,26 @@
-.skills::before{
+.skills::before {
   content: "";
   margin: 0 3rem;
   background: #cbcbcb;
   display: block;
   height: 2px;
-  opacity: .3;
+  opacity: 0.3;
 }
-.skills svg{
+.skills svg {
   width: auto;
   height: 50px;
 }
-.skillBox{
+.skillBox {
   border: 1px solid #cbcbcb3d;
   width: 450px !important;
   align-items: center !important;
 }
 
-
 @media (max-width: 992px) {
-  .skills::before{
+  .skills::before {
     margin: 0 1rem;
   }
-  .skills .skillBox{
+  .skills .skillBox {
     width: 300px !important;
     /* align-items: center !important; */
   }

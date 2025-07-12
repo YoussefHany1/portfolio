@@ -1,0 +1,119 @@
+.projects {
+  &::before {
+    content: "";
+    background: #cbcbcb;
+    display: block;
+    height: 2px;
+    opacity: 0.3;
+    width: 100%;
+  }
+}
+.projectBox {
+  border: 1px solid #cbcbcb3d;
+  min-width: -webkit-fill-available;
+  min-width: fit-content;
+  & button {
+    border: 2px solid #cbcbcb2f;
+    transition-duration: 0.3s;
+    &:hover:not(.modal button) {
+      border: 2px solid #16c72e30;
+    }
+  }
+  & img:not(.pics img) {
+    max-width: 600px;
+    min-width: 300px;
+  }
+  & p {
+    font-family: sans-serif;
+    color: #adb5bd;
+  }
+}
+/* hover border effect */
+.projectBox::before,
+.projectBox::after {
+  z-index: -2;
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+  position: absolute;
+  content: "";
+}
+.projectBox::before {
+  top: 0px;
+  left: 0px;
+}
+.projectBox::after {
+  bottom: 0px;
+  right: 0px;
+}
+.btb-active.projectBox::before,
+.btb-active.projectBox::after,
+.projectBox:hover::before,
+.projectBox:hover::after {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+.btb-active.projectBox::before,
+.projectBox:hover::before {
+  border-top-color: var(--primary);
+  border-right-color: var(--primary);
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.btb-active.projectBox::after,
+.projectBox:hover::after {
+  border-bottom-color: var(--primary);
+  border-left-color: var(--primary);
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
+}
+
+.modalHeader {
+  border-color: #cbcbcb3d !important;
+}
+.modalDialog {
+  max-width: 90% !important;
+}
+.modalContent {
+  border: 1px solid #cbcbcb3d !important;
+}
+.skills ul li {
+  background-color: #333333;
+}
+.description {
+  position: sticky;
+  position: -webkit-sticky;
+  height: 100%;
+  float: left;
+}
+.btnGroup a {
+  border-color: #cbcbcb3d !important;
+  transition-duration: 0.2s;
+  &:hover {
+    border-color: var(--primary) !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .btb-active.projectBox::before,
+  .projectBox:hover::before {
+    transition: width 0s ease-out, height 0s ease-out 0s;
+  }
+  .btb-active.projectBox::after,
+  .projectBox:hover::after {
+    transition: border-color 0s ease-out 0s, width 0s ease-out 0s,
+      height 0s ease-out 0s;
+  }
+  .projectBox button {
+    &:hover {
+      border: 2px solid #cbcbcb2f;
+    }
+  }
+  .description {
+    position: static !important;
+  }
+  .btnGroup {
+    display: flex !important;
+    justify-content: space-evenly;
+  }
+}

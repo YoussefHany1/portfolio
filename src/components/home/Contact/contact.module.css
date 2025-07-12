@@ -1,27 +1,30 @@
-.contact::before{
+.contact::before {
   content: "";
   background: #cbcbcb;
   display: block;
   height: 2px;
   margin-bottom: 12px;
-  opacity: .3;
+  opacity: 0.3;
   width: 100%;
 }
-.form{
+.form {
   font-family: sans-serif;
   max-width: 600px;
 }
-.box{
+.input {
+  outline-color: var(--primary);
+}
+.box {
   background-color: #cbcbcb1a;
 }
-.social{
+.social {
   width: 100%;
-  & svg{
+  & svg {
     margin-right: 1rem;
     width: 100%;
     max-width: 70px;
     transition-duration: 0.3s;
-    &:hover{
+    &:hover {
       transform: scale(1.1);
     }
   }
@@ -30,21 +33,23 @@
   font-family: sans-serif !important;
   border: 1px solid #cbcbcb4f !important;
   transition-duration: 0.3s;
-  &:hover{
-    box-shadow: 0 0 5px var(--primary),
-                0 0 25px var(--primary),
-                0 0 75px var(--primary);
+  &:hover {
+    box-shadow: 0 0 5px var(--primary), 0 0 25px var(--primary),
+      0 0 75px var(--primary);
   }
-  & svg{
+  & svg {
     width: 2em;
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
   }
 }
-@media (max-width: 992px){
-  .form{
+@media (max-width: 992px) {
+  .form {
     order: 2;
   }
-  .btn{
+  .btn {
     transition-duration: 0s !important;
+  }
+  .social lord-icon {
+    width: 55px !important;
   }
 }
