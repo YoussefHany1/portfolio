@@ -59,10 +59,10 @@ function Contact() {
                                 <lord-icon src="https://cdn.lordicon.com/qtenrimd.json" trigger="hover" stroke="light" colors="primary:#121331,secondary:#16c72e,tertiary:#ebe6ef" style={{ width: "70px", height: "70px" }}></lord-icon>
                             </a>
                             <a href='https://www.instagram.com/youssef__hany_/' target='_blank'>
-                                <lord-icon src="https://cdn.lordicon.com/wgtaryar.json" trigger="morph" state="morph-circle" colors="primary:#16c72e,secondary:#16c72e,tertiary:#16c72e,quaternary:#151515" style={{ width: "70px", height: "70px" }}> </lord-icon>
+                                <lord-icon src="https://cdn.lordicon.com/wgtaryar.json" trigger="morph" state="morph-circle" colors="primary:#16c72e,secondary:#16c72e,tertiary:#16c72e,quaternary:#232323" style={{ width: "70px", height: "70px" }}> </lord-icon>
                             </a>
                             <a href='https://www.facebook.com/youssef.hany0' target='_blank'>
-                                <lord-icon src="https://cdn.lordicon.com/gnqwqcgx.json" trigger="morph" state="morph-circle" colors="primary:#121331,secondary:#16c72e,tertiary:#151515" style={{ width: "70px", height: "70px" }}></lord-icon>
+                                <lord-icon src="https://cdn.lordicon.com/gnqwqcgx.json" trigger="morph" state="morph-circle" colors="primary:#121331,secondary:#16c72e,tertiary:#232323" style={{ width: "70px", height: "70px" }}></lord-icon>
                             </a>
                         </div>
                         <button type="button" className={`download rounded-3 btn  p-2 ${styles.btn}`}><a href='https://drive.google.com/file/d/1p-dkLP_VNOLx5BYazsnrI8pHUaJA_oG8/view?usp=drive_link' target="_blank" className='text-decoration-none text-white'>
