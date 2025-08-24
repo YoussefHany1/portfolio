@@ -1,55 +1,6 @@
-.contact::before {
-  content: "";
-  background: #cbcbcb;
-  display: block;
-  height: 2px;
-  margin-bottom: 12px;
-  opacity: 0.3;
-  width: 100%;
-}
-.form {
-  font-family: sans-serif;
-  max-width: 600px;
-}
-.input {
-  outline-color: var(--primary);
-}
-.box {
-  background-color: #cbcbcb1a;
-}
-.social {
-  width: 100%;
-  & svg {
-    margin-right: 1rem;
-    width: 100%;
-    max-width: 70px;
-    transition-duration: 0.3s;
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-}
-.btn {
-  font-family: sans-serif !important;
-  border: 1px solid #cbcbcb4f !important;
-  transition-duration: 0.3s;
-  &:hover {
-    box-shadow: 0 0 5px var(--primary), 0 0 25px var(--primary),
-      0 0 75px var(--primary);
-  }
-  & svg {
-    width: 2em;
-    margin: 0 0.5rem;
-  }
-}
-@media (max-width: 992px) {
-  .form {
-    order: 2;
-  }
-  .btn {
-    transition-duration: 0s !important;
-  }
+@media (max-width: 1024px) {
   .social lord-icon {
     width: 55px !important;
+    /* width: auto; */
   }
 }

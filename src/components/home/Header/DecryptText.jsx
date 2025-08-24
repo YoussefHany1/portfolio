@@ -47,7 +47,7 @@ export function DecryptText({ text, speed = 50, className = '' }) {
   }, [text, speed]);
 
   return (
-    <span className={`font-mono ${isDecrypting ? 'decrypt-animation' : ''} ${className}`}>
+    <span className={`${isDecrypting ? 'decrypt-animation' : ''} ${className}`}>
       {displayText}
     </span>
   );

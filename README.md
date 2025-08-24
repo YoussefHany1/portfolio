@@ -115,9 +115,9 @@ Contributions are welcome! To contribute:
 
 ## Contact
 
-- **Name:** Your Name
-- **Email:** your.email@example.com
-- **Website:** https://yourwebsite.com
+- **Name:** Youssef Hany
+- **Email:** youssefhany.2005.yh@gmail.com
+- **Website:** https://youssefhany.vercel.app/
 - **GitHub:** https://github.com/YoussefHany1
 
 ---
