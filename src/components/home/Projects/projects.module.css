@@ -1,23 +1,3 @@
-.projectBox {
-  border: 1px solid #cbcbcb3d;
-  min-width: -webkit-fill-available;
-  min-width: fit-content;
-  & button {
-    border: 2px solid #cbcbcb2f;
-    transition-duration: 0.3s;
-    &:hover:not(.modal button) {
-      border: 2px solid #16c72e30;
-    }
-  }
-  & img:not(.pics img) {
-    max-width: 600px;
-    min-width: 300px;
-  }
-  & p {
-    font-family: sans-serif;
-    color: #adb5bd;
-  }
-}
 /* hover border effect */
 .projectBox::before,
 .projectBox::after {
@@ -58,25 +38,6 @@
     height 0.25s ease-out 0.75s;
 }
 
-.modalHeader {
-  border-color: #cbcbcb3d !important;
-}
-.modalDialog {
-  max-width: 90% !important;
-}
-.modalContent {
-  border: 1px solid #cbcbcb3d !important;
-}
-.skills ul li {
-  background-color: #333333;
-}
-.description {
-  position: sticky;
-  position: -webkit-sticky;
-  height: 100%;
-  float: left;
-}
-
 @media (max-width: 1024px) {
   .btb-active.projectBox::before,
   .projectBox:hover::before {
@@ -86,17 +47,5 @@
   .projectBox:hover::after {
     transition: border-color 0s ease-out 0s, width 0s ease-out 0s,
       height 0s ease-out 0s;
-  }
-  .projectBox button {
-    &:hover {
-      border: 2px solid #cbcbcb2f;
-    }
-  }
-  .description {
-    position: static !important;
-  }
-  .btnGroup {
-    display: flex !important;
-    justify-content: space-evenly;
   }
 }

@@ -1,5 +1,4 @@
 .headerContent h1 {
-  font-size: 5.5rem;
   font-family: Refinery-25 !important;
   animation: glow 3s infinite alternate;
 }
@@ -158,12 +157,8 @@
 }
 @media (max-width: 1024px) {
   .headerContent h1 {
-    font-size: 4rem !important;
     animation: none;
     text-shadow: 0 0 5px #00ff0075, 0 0 10px #00ff0075, 0 0 20px #00ff0075,
       0 0 40px #00ff0075, 0 0 80px #00ff0075;
-  }
-  .headerContent h2 {
-    font-size: 1.2rem;
   }
 }

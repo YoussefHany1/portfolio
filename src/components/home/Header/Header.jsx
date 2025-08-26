@@ -40,12 +40,12 @@ setInterval(draw, 33);
 function Header() {
   return (
     <>
-      <header className={`${styles.header}`}>
+      <header className={`h-screen ${styles.header}`}>
         <div className={`header-content text-white text-center h-full flex flex-col justify-center p-4 lg:p-0 ${styles.headerContent}`}>
-          <h1 className='font-bold uppercase'>
+          <h1 className='font-bold uppercase lg:text-8xl text-5xl'>
             <DecryptText text="Get the Ultimate Web Experience" speed={50} />
           </h1>
-          <h2 className='text-2xl font-semibold'>With websites that exude <span className={`typewriter ${styles.typewriter}`}></span></h2>
+          <h2 className='text-lg lg:text-2xl font-semibold'>With websites that exude <span className={`typewriter ${styles.typewriter}`}></span></h2>
         </div>
       </header>
     </>

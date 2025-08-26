@@ -24,8 +24,8 @@ function App() {
 
   if (loading) {
     return (
-      <div className="loader d-flex justify-content-center align-items-center vh-100">
-        <div data-glitch="Loading..." className="glitch">Loading...</div>
+      <div className="loader flex justify-center items-center h-screen">
+        <div data-glitch="Loading..." className="glitch relative text-6xl font-bold leading-tight text-white tracking-wider z-10">Loading...</div>
       </div>
     );
   }

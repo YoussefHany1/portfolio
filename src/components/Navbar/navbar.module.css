@@ -47,15 +47,6 @@
   .menuList::after {
     display: none;
   }
-  .navItem {
-    padding: 1rem 3rem !important;
-    & a {
-      font-size: 2rem !important;
-    }
-    &:hover {
-      box-shadow: none;
-    }
-  }
   .navItem::before {
     content: none;
   }
