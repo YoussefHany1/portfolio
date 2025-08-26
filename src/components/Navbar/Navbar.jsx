@@ -8,7 +8,7 @@ function Navbar() {
     <>
       <nav className='navbar flex flex-col lg:flex-row py-6 fixed w-screen z-3 top-0 bg-[linear-gradient(180deg,rgba(16,16,16,0.65),transparent)] h-28'>
         <div className="w-full flex justify-between items-start px-6 lg:px-12">
-          <a className={`navbar-brand text-white fw-bold text-3xl ${styles.navbarBrand}`} href='#'>Youssef Hany</a>
+          <a className={`navbar-brand text-white font-bold text-3xl ${styles.navbarBrand}`} href='#'>Youssef Hany</a>
           <div className='menu flex-grow-0 flex lg:[clip-path:polygon(16px_0px,100%_0px,100%_30px,calc(100%-18px)_48px,0px_1000%,0px_16px)]'>
             <button className="p-2 text-gray-700 rounded-lg border lg:hidden bg-(--primary)" onClick={() => setMenuOpen(!menuOpen)}
             >
