@@ -31,10 +31,10 @@ This is a personal portfolio project built with React. It serves as a showcase f
 ## Tech Stack
 
 - **Frontend:** React, JavaScript (ES6+)
-- **Styling:** CSS Modules / Bootstrap
+- **Styling:** CSS Modules / Tailwindcss
 - **Routing:** React Router
 - **Form Handling:** Email.js
-- **Icons:** React Icons
+- **Icons:** SVG
 - **Deployment:** Vercel
 
 ## Installation
@@ -71,7 +71,7 @@ This is a personal portfolio project built with React. It serves as a showcase f
 
 ## Usage
 
-- Navigate to `http://localhost:3000` in your browser to view the development build.
+- Navigate to `http://localhost:5173` in your browser to view the development build.
 - Edit components in the `src/` directory to customize content and styling.
 - Update project details and images in the `src/data` folder.
 
@@ -84,21 +84,20 @@ This is a personal portfolio project built with React. It serves as a showcase f
 │       └── images/
 ├── src/
 │   ├── components/
-│   │   ├── Header/
 │   │   ├── Footer/
-│   │   └── ProjectCard/
+│   │   ├── home/
+│   │   └── Navbar/
 │   ├── pages/
-│   │   ├── Home.jsx
-│   │   ├── About.jsx
-│   │   ├── Projects.jsx
-│   │   └── Contact.jsx
-│   ├── styles/
-│   │   └── globals.css
-│   ├── data/
-│   │   └── projects.js
+│   │   ├── home
+│   │   └── projects
+│   ├── assets/
+│   ├── App.css
 │   ├── App.jsx
-│   └── index.js
+│   └── main.jsx
 ├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
 ├── package.json
 └── README.md
 ```
