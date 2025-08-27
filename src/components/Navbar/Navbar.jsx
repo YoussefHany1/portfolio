@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <>
       <nav className="navbar flex flex-col lg:flex-row py-6 fixed w-screen z-3 top-0 bg-[linear-gradient(180deg,rgba(16,16,16,0.65),transparent)] h-28">
-        <div className="w-full flex justify-between items-start px-6 lg:px-12">
+        <div className="w-full flex justify-between items-center px-6 lg:px-12">
           <a
             className={`navbar-brand text-white font-bold text-3xl ${styles.navbarBrand}`}
             href="#"
@@ -41,28 +41,28 @@ function Navbar() {
               <li
                 className="nav-item flex"
               >
-                <a href="#" className="text-3xl uppercase text-white fw-semibold py-4 px-12 lg:px-6 lg:py-2 rounded-lg transition-all duration-200 ease-in-out lg:hover:shadow-[0_0_20px_var(--primary)] hover:bg-(--primary) hover:text-black hover:font-bold">
+                <a href="#" className="text-3xl uppercase text-white fw-semibold py-4 w-full px-12 lg:px-6 lg:py-2 rounded-lg transition-all duration-200 ease-in-out lg:hover:shadow-[0_0_20px_var(--primary)] hover:bg-(--primary) hover:text-black hover:font-bold">
                   Home
                 </a>
               </li>
               <li
                 className="nav-item flex"
               >
-                <a href="#services" className="text-3xl uppercase text-white fw-semibold py-4 px-12 lg:px-6 lg:py-2 rounded-lg transition-all duration-200 ease-in-out lg:hover:shadow-[0_0_20px_var(--primary)] hover:bg-(--primary) hover:text-black hover:font-bold">
+                <a href="#services" className="text-3xl uppercase text-white fw-semibold w-full py-4 px-12 lg:px-6 lg:py-2 rounded-lg transition-all duration-200 ease-in-out lg:hover:shadow-[0_0_20px_var(--primary)] hover:bg-(--primary) hover:text-black hover:font-bold">
                   Services
                 </a>
               </li>
               <li
                 className="nav-item flex"
               >
-                <a href="#projects" className="text-3xl uppercase text-white fw-semibold py-4 px-12 lg:px-6 lg:py-2 rounded-lg transition-all duration-200 ease-in-out lg:hover:shadow-[0_0_20px_var(--primary)] hover:bg-(--primary) hover:text-black hover:font-bold">
+                <a href="#projects" className="text-3xl uppercase text-white fw-semibold w-full py-4 px-12 lg:px-6 lg:py-2 rounded-lg transition-all duration-200 ease-in-out lg:hover:shadow-[0_0_20px_var(--primary)] hover:bg-(--primary) hover:text-black hover:font-bold">
                   Projects
                 </a>
               </li>
               <li
                 className="nav-item flex"
               >
-                <a href="#contact" className="text-3xl uppercase text-white fw-semibold py-4 px-12 lg:px-6 lg:py-2 rounded-lg transition-all duration-200 ease-in-out lg:hover:shadow-[0_0_20px_var(--primary)] hover:bg-(--primary) hover:text-black hover:font-bold">
+                <a href="#contact" className="text-3xl uppercase text-white fw-semibold w-full py-4 px-12 lg:px-6 lg:py-2 rounded-lg transition-all duration-200 ease-in-out lg:hover:shadow-[0_0_20px_var(--primary)] hover:bg-(--primary) hover:text-black hover:font-bold">
                   Contact
                 </a>
               </li>

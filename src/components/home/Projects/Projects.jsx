@@ -117,12 +117,12 @@ function Projects() {
                                                     </div>
                                                 </div>
                                                 <div className='w-full lg:w-2/3 lg:px-12 mt-6'>
-                                                    <img src='/screenshots/megamart/1.jpeg' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/megamart/2.jpeg' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/megamart/3.jpeg' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/megamart/4.png' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/megamart/5.jpeg' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/megamart/6.png' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/megamart/1.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/megamart/2.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/megamart/3.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/megamart/4.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/megamart/5.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/megamart/6.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
                                                 </div>
                                             </div>
                                         </DialogPanel>
@@ -130,7 +130,7 @@ function Projects() {
                                 </div>
                             </Dialog>
                         </div>
-                        <img src={"/screenshots/megamart/1.jpeg"} className='rounded w-full max-w-xl min-w-72' loading="lazy" alt='Front-end for E-commerce website' />
+                        <img src="/screenshots/megamart/1.webp" className='rounded w-full max-w-xl min-w-72' loading="lazy" alt='Front-end for E-commerce website' />
                     </div>
                     {/* second project */}
                     <div className={`projectBox relative border border-gray-200/25 flex justify-between items-center px-6 py-6 lg:px-12 rounded-2xl lg:flex-row flex-col-reverse ${styles.projectBox}`}>
@@ -211,9 +211,9 @@ function Projects() {
                                                     </div>
                                                 </div>
                                                 <div className='w-full lg:w-2/3 lg:px-12 mt-6'>
-                                                    <img src='/screenshots/gaming-zone/2.jpeg' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/gaming-zone/3.jpeg' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/gaming-zone/4.jpeg' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/gaming-zone/2.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/gaming-zone/3.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/gaming-zone/4.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
                                                 </div>
                                             </div>
                                         </DialogPanel>
@@ -221,7 +221,7 @@ function Projects() {
                                 </div>
                             </Dialog>
                         </div>
-                        <img src={"/screenshots/gaming-zone/1.jpeg"} className='rounded w-full max-w-xl min-w-72' loading="lazy" alt='Gaming News Aggregator Website' />
+                        <img src="/screenshots/gaming-zone/1.webp" className='rounded w-full max-w-xl min-w-72' loading="lazy" alt='Gaming News Aggregator Website' />
                     </div>
 
                     {/* third project*/}
@@ -304,10 +304,10 @@ function Projects() {
                                                     </div>
                                                 </div>
                                                 <div className='w-full lg:w-2/3 lg:px-12 mt-6'>
-                                                    <img src='/screenshots/mohid/1.jpeg' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/mohid/2.jpeg' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/mohid/3.jpeg' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/mohid/4.jpeg' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/mohid/1.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/mohid/2.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/mohid/3.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/mohid/4.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
                                                 </div>
                                             </div>
                                         </DialogPanel>
@@ -315,7 +315,7 @@ function Projects() {
                                 </div>
                             </Dialog>
                         </div>
-                        <img src={"/screenshots/mohid/1.jpeg"} className='rounded w-full max-w-xl min-w-72' loading="lazy" alt='Smartwatch E-Commerce Front-End' />
+                        <img src="/screenshots/mohid/1.webp" className='rounded w-full max-w-xl min-w-72' loading="lazy" alt='Smartwatch E-Commerce Front-End' />
                     </div>
                 </div>
             </section>

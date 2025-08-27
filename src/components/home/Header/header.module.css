@@ -13,16 +13,16 @@
   width: 100%;
   z-index: -1;
 }
-.typewriter::before {
-  content: "";
-  animation: typing 13s infinite;
+.typewriter {
+  white-space: nowrap;
 }
-.typewriter::after {
-  content: "";
-  border-right: 1px solid white;
-  animation: blink 0.7s linear infinite;
-  height: 30px;
-  display: inline-block;
+.animate-caret {
+  animation: blink 0.8s steps(1) infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 @keyframes glow {
   0% {
@@ -32,127 +32,6 @@
   100% {
     text-shadow: 0 0 10px #00ff0075, 0 0 50px #00ff0075, 0 0 20px #00ff0075,
       0 0 50px #00ff0075, 0 0 140px #00ff0075;
-  }
-}
-@keyframes typing {
-  0%,
-  20% {
-    content: "";
-  }
-  1%,
-  19% {
-    content: "m";
-  }
-  2%,
-  18% {
-    content: "ma";
-  }
-  3%,
-  17% {
-    content: "mag";
-  }
-  4%,
-  16% {
-    content: "magi";
-  }
-  5%,
-  15% {
-    content: "magic";
-  }
-
-  27%,
-  55% {
-    content: "";
-  }
-  28%,
-  54% {
-    content: "f";
-  }
-  29%,
-  53% {
-    content: "fa";
-  }
-  30%,
-  52% {
-    content: "fan";
-  }
-  31%,
-  51% {
-    content: "fant";
-  }
-  32%,
-  50% {
-    content: "fanta";
-  }
-  33%,
-  49% {
-    content: "fantas";
-  }
-  34%,
-  48% {
-    content: "fantast";
-  }
-  35%,
-  47% {
-    content: "fantasti";
-  }
-  36%,
-  46% {
-    content: "fantastic";
-  }
-
-  62%,
-  92% {
-    content: "";
-  }
-  63%,
-  91% {
-    content: "c";
-  }
-  64%,
-  90% {
-    content: "cr";
-  }
-  65%,
-  89% {
-    content: "cre";
-  }
-  66%,
-  88% {
-    content: "crea";
-  }
-  67%,
-  87% {
-    content: "creat";
-  }
-  68%,
-  86% {
-    content: "creati";
-  }
-  69%,
-  85% {
-    content: "creativ";
-  }
-  70%,
-  84% {
-    content: "creativi";
-  }
-  71%,
-  83% {
-    content: "creativit";
-  }
-  72%,
-  82% {
-    content: "creativity";
-  }
-}
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
   }
 }
 @media (max-width: 1024px) {
