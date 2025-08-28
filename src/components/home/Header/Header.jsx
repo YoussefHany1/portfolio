@@ -13,10 +13,13 @@ function Header() {
           </h1>
           <h2 className="text-lg lg:text-2xl font-semibold">
             With websites that exude {" "}
-            <span className={`inline-flex items-center ${styles.typewriter}`}>
-              <Typewriter words={["magic", "fantastic", "creativity"]} typeSpeed={70} deleteSpeed={70} holdDelay={900} />
-              <span className="ml-1 border-r border-white h-[1em] animate-caret" />
-            </span>
+            <Typewriter
+              text={["magic", "fantastic", "creativity", "imagination", "beauty", "power", "spirit", "passion"]}
+              typingSpeed={75}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter="|"
+            />
           </h2>
         </div>
       </header>

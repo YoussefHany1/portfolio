@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar.jsx'
-import Footer from './components/Footer/Footer.jsx'
 import Home from './pages/home/Home.jsx'
 import Projects from './pages/projects/Projects.jsx'
+import NotFound from './pages/notFound/NotFound.jsx'
 import './App.css'
 
 function App() {
@@ -37,9 +37,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
-      <Footer />
     </>
   )
 }

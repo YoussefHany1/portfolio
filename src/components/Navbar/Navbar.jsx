@@ -10,7 +10,7 @@ function Navbar() {
         <div className="w-full flex justify-between items-center px-6 lg:px-12">
           <a
             className={`navbar-brand text-white font-bold text-3xl ${styles.navbarBrand}`}
-            href="#"
+            href="/"
           >
             Youssef Hany
           </a>
