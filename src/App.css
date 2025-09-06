@@ -20,7 +20,7 @@
     url(/fonts/Refinery-25SemiBold-8a4883af.woff) format("woff");
 }
 :root {
-  --primary: #16c72e;
+  --primary: rgb(22 199 46);
 }
 body {
   background-color: #101010 !important;
