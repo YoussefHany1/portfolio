@@ -1,4 +1,4 @@
-import lottie from 'lottie-web';
+import lottie from 'lottie-web/build/player/lottie_light';
 import { defineElement } from "@lordicon/element";
 import { Button, Dialog, DialogPanel, DialogTitle } from '@headlessui/react'
 import { useState } from 'react'
@@ -117,12 +117,12 @@ function Projects() {
                                                     </div>
                                                 </div>
                                                 <div className='w-full lg:w-2/3 lg:px-12 mt-6'>
-                                                    <img src='/screenshots/megamart/1.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/megamart/2.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/megamart/3.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/megamart/4.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/megamart/5.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/megamart/6.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/megamart/1.webp' className='rounded mb-6 aspect-video' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/megamart/2.webp' className='rounded mb-6 aspect-video' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/megamart/3.webp' className='rounded mb-6 aspect-video' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/megamart/4.webp' className='rounded mb-6 aspect-video' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/megamart/5.webp' className='rounded mb-6 aspect-video' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/megamart/6.webp' className='rounded mb-6 aspect-video' loading="lazy" alt='Screenshot of the project' />
                                                 </div>
                                             </div>
                                         </DialogPanel>
@@ -212,8 +212,8 @@ function Projects() {
                                                 </div>
                                                 <div className='w-full lg:w-2/3 lg:px-12 mt-6'>
                                                     <img src='/screenshots/gaming-zone/2.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/gaming-zone/3.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/gaming-zone/4.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/gaming-zone/3.webp' className='rounded mb-6 aspect-video' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/gaming-zone/4.webp' className='rounded mb-6 aspect-video' loading="lazy" alt='Screenshot of the project' />
                                                 </div>
                                             </div>
                                         </DialogPanel>
@@ -304,10 +304,10 @@ function Projects() {
                                                     </div>
                                                 </div>
                                                 <div className='w-full lg:w-2/3 lg:px-12 mt-6'>
-                                                    <img src='/screenshots/mohid/1.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/mohid/2.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/mohid/3.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
-                                                    <img src='/screenshots/mohid/4.webp' className='rounded mb-6' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/mohid/1.webp' className='rounded mb-6 aspect-video' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/mohid/2.webp' className='rounded mb-6 aspect-video' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/mohid/3.webp' className='rounded mb-6 aspect-video' loading="lazy" alt='Screenshot of the project' />
+                                                    <img src='/screenshots/mohid/4.webp' className='rounded mb-6 aspect-video' loading="lazy" alt='Screenshot of the project' />
                                                 </div>
                                             </div>
                                         </DialogPanel>

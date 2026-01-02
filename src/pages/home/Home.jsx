@@ -1,10 +1,12 @@
+import { lazy } from 'react';
 import Background from '../../components/background/Background.jsx'
 import Header from '../../components/home/Header/Header.jsx'
-import OurServices from '../../components/home/OurServices/OurServices.jsx'
-import Skills from '../../components/home/Skills/Skills.jsx'
-import Projects from '../../components/home/Projects/Projects.jsx'
-import Contact from '../../components/home/Contact/Contact.jsx'
-import Footer from '../../components/home/Footer/Footer.jsx'
+const OurServices = lazy(() => import('../../components/home/OurServices/OurServices.jsx'));
+const Skills = lazy(() => import('../../components/home/Skills/Skills.jsx'));
+const Projects = lazy(() => import('../../components/home/Projects/Projects.jsx'));
+const Contact = lazy(() => import('../../components/home/Contact/Contact.jsx'));
+const Footer = lazy(() => import('../../components/home/Footer/Footer.jsx'));
+
 
 function Home() {
   return (

@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, lazy } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar.jsx'
 import Home from './pages/home/Home.jsx'
-import Projects from './pages/projects/Projects.jsx'
-import NotFound from './pages/notFound/NotFound.jsx'
+const Projects = lazy(() => import('./pages/projects/Projects.jsx'));
+const NotFound = lazy(() => import('./pages/notFound/NotFound.jsx'));
 import './App.css'
 
 function App() {
