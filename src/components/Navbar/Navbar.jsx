@@ -35,7 +35,7 @@ function Navbar() {
               </svg>
             </button>
             <ul
-              className={`right-0 lg:flex backdrop-blur-md border border-(--primary) bg-black/50 ${menuOpen ? "block absolute top-17 right-6" : "hidden"
+              className={`right-0 lg:flex border border-(--primary) bg-black/50 ${menuOpen ? "block absolute top-17 right-6" : "hidden"
                 } ${styles.menuList}`}
             >
               <li
