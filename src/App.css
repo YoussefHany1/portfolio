@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @font-face {
   font-family: "Blender Pro Book";
+  font-display: swap;
   src: url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
   src: url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix")
       format("embedded-opentype"),
@@ -20,7 +21,7 @@
     url(/fonts/Refinery-25SemiBold-8a4883af.woff) format("woff");
 }
 :root {
-  --primary: rgb(22 199 46);
+  --primary: #16c72e;
 }
 body {
   background-color: #101010 !important;

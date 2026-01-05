@@ -1,12 +1,15 @@
-import { lazy } from 'react';
-import Background from '../../components/background/Background.jsx'
-import Header from '../../components/home/Header/Header.jsx'
-const OurServices = lazy(() => import('../../components/home/OurServices/OurServices.jsx'));
-const Skills = lazy(() => import('../../components/home/Skills/Skills.jsx'));
-const Projects = lazy(() => import('../../components/home/Projects/Projects.jsx'));
-const Contact = lazy(() => import('../../components/home/Contact/Contact.jsx'));
-const Footer = lazy(() => import('../../components/home/Footer/Footer.jsx'));
-
+import { lazy } from "react";
+import Background from "../../components/background/Background.jsx";
+import Header from "../../components/home/Header/Header.jsx";
+const OurServices = lazy(() =>
+  import("../../components/home/OurServices/OurServices.jsx")
+);
+const Skills = lazy(() => import("../../components/home/Skills/Skills.jsx"));
+const Projects = lazy(() =>
+  import("../../components/home/Projects/Projects.jsx")
+);
+const Contact = lazy(() => import("../../components/home/Contact/Contact.jsx"));
+const Footer = lazy(() => import("../../components/home/Footer/Footer.jsx"));
 
 function Home() {
   return (
@@ -19,6 +22,6 @@ function Home() {
       <Contact />
       <Footer />
     </>
-  )
+  );
 }
-export default Home
+export default Home;

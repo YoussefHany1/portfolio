@@ -1,6 +1,7 @@
 import styles from "./header.module.css";
 import { DecryptText } from "./DecryptText.jsx";
-import Typewriter from "./Typewriter.jsx";
+import { Typewriter } from "react-simple-typewriter";
+
 function Header() {
   return (
     <>
@@ -12,13 +13,24 @@ function Header() {
             <DecryptText text="Get the Ultimate Web Experience" speed={50} />
           </h1>
           <h2 className="text-lg lg:text-2xl font-semibold">
-            With websites that exude {" "}
+            With websites that exude{" "}
             <Typewriter
-              text={["magic", "fantastic", "creativity", "imagination", "beauty", "power", "spirit", "passion"]}
-              typingSpeed={75}
-              pauseDuration={1500}
-              showCursor={true}
-              cursorCharacter="|"
+              words={[
+                "passion",
+                "creativity",
+                "imagination",
+                "fantastic",
+                "magic",
+                "power",
+                "spirit",
+                "beauty",
+              ]}
+              loop={5}
+              cursor
+              cursorStyle="_"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
             />
           </h2>
         </div>
