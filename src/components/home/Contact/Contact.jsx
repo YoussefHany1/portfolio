@@ -14,42 +14,32 @@ const SOCIAL_LINKS = [
   {
     id: "linkedin",
     url: "https://linkedin.com/in/yh5",
-    icon: "https://cdn.lordicon.com/xerxcacw.json",
+    icon: "/icons/linkedin.json",
     trigger: "hover",
-    state: "hover-draw",
-    colors: "primary:#16c72e,secondary:#232323,tertiary:#16c72e",
   },
   {
     id: "github",
     url: "https://github.com/YoussefHany1",
-    icon: "https://cdn.lordicon.com/lllcnxva.json",
+    icon: "/icons/github.json",
     trigger: "hover",
-    colors: "primary:#121331,secondary:#232323,tertiary:#16c72e",
   },
   {
     id: "whatsapp",
     url: "https://wa.me/qr/UET75FACE2XCH1",
-    icon: "https://cdn.lordicon.com/qtenrimd.json",
+    icon: "/icons/whatsapp.json",
     trigger: "hover",
-    stroke: "light",
-    colors: "primary:#121331,secondary:#16c72e,tertiary:#ebe6ef",
   },
   {
     id: "instagram",
     url: "https://www.instagram.com/y.hm10/",
-    icon: "https://cdn.lordicon.com/wgtaryar.json",
+    icon: "/icons/instagram.json",
     trigger: "morph",
-    state: "morph-circle",
-    colors:
-      "primary:#16c72e,secondary:#16c72e,tertiary:#16c72e,quaternary:#232323",
   },
   {
     id: "facebook",
     url: "https://www.facebook.com/youssef.hany0",
-    icon: "https://cdn.lordicon.com/gnqwqcgx.json",
+    icon: "/icons/facebook.json",
     trigger: "morph",
-    state: "morph-circle",
-    colors: "primary:#121331,secondary:#16c72e,tertiary:#232323",
   },
 ];
 
@@ -118,7 +108,7 @@ const HoloInput = ({ type = "text", name, id, label }) => {
 };
 
 const SocialIcon = ({ link }) => (
-  <a
+  <asendvpbspaecvpbspaec
     href={link.url}
     target="_blank"
     rel="noopener noreferrer"
@@ -127,12 +117,9 @@ const SocialIcon = ({ link }) => (
     <lord-icon
       src={link.icon}
       trigger={link.trigger}
-      state={link.state}
-      stroke={link.stroke}
-      colors={link.colors}
       style={{ width: "70px", height: "70px" }}
     />
-  </a>
+  </asendvpbspaecvpbspaec>
 );
 
 const SubmitButton = ({ isSubmitting }) => (
@@ -142,10 +129,8 @@ const SubmitButton = ({ isSubmitting }) => (
     className="send mt-3 font-sans font-semibold flex items-center bg-[#cbcbcb1a] border border-gray-300/25 lg:duration-300 text-white rounded-md p-2 px-4 hover:border-(--primary) hover:[box-shadow:0_0_5px_var(--primary),_0_0_25px_var(--primary),_0_0_75px_var(--primary)] disabled:opacity-50 disabled:cursor-not-allowed"
   >
     <lord-icon
-      src="https://cdn.lordicon.com/vpbspaec.json"
+      src="/icons/send.json"
       trigger="loop"
-      delay="500"
-      colors="primary:#16c72e"
       style={{ width: "35px", height: "35px", marginRight: "8px" }}
     />
     {isSubmitting ? "Sending..." : "Send"}
@@ -169,11 +154,10 @@ const MoreInfoSection = () => (
       className="download rounded-md p-4 font-sans border border-gray-300/25 lg:duration-300 hover:border-(--primary) hover:[box-shadow:0_0_5px_var(--primary),_0_0_25px_var(--primary),_0_0_75px_var(--primary)] text-white flex items-center font-semibold"
     >
       <lord-icon
-        src="https://cdn.lordicon.com/dicvhxpz.json"
+        src="/icons/view.json"
         trigger="loop"
         delay="1000"
-        colors="primary:#fff,secondary:#16c72e"
-        style={{ width: "40px", height: "40px", marginRight: "8px" }}
+        style={{ width: "50px", height: "50px", marginRight: "8px" }}
       />
       View Resume
     </a>

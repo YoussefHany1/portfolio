@@ -12,7 +12,7 @@ function ProjectLinks({ github, demo }) {
         aria-label="View Github repository"
       >
         <lord-icon
-          src="https://cdn.lordicon.com/lllcnxva.json"
+          src="/icons/github.json"
           trigger="loop"
           colors="secondary:#16c72e"
         />
@@ -27,7 +27,7 @@ function ProjectLinks({ github, demo }) {
         aria-label="View live demo"
       >
         <lord-icon
-          src="https://cdn.lordicon.com/vduvxizq.json"
+          src="/icons/link.json"
           trigger="loop"
           delay="500"
           colors="primary:#16c72e"

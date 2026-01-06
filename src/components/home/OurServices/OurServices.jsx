@@ -3,7 +3,7 @@ import { useRef } from "react";
 const SERVICES_DATA = [
   {
     id: "performance",
-    icon: "https://cdn.lordicon.com/jfwzwlls.json",
+    icon: "/icons/performance.json",
     delay: 300,
     title: "Performance Optimization",
     description:
@@ -11,7 +11,7 @@ const SERVICES_DATA = [
   },
   {
     id: "api",
-    icon: "https://cdn.lordicon.com/trkmrggx.json",
+    icon: "/icons/api.json",
     delay: 1000,
     title: "API Integration",
     description:
@@ -19,7 +19,7 @@ const SERVICES_DATA = [
   },
   {
     id: "responsive",
-    icon: "https://cdn.lordicon.com/baxknfaw.json",
+    icon: "/icons/responsive.json",
     delay: 1000,
     title: "Responsive Web Design",
     description: "Craft mobile-first websites that look great on any device.",
@@ -37,7 +37,7 @@ function ServiceCard({ service }) {
         trigger="loop"
         delay={service.delay}
         colors="primary:#16c72e"
-        style={{ width: "100px", height: "100px" }}
+        style={{ width: "300px", height: "130px" }}
         aria-hidden="true"
       />
       <h3 className="font-bold text-xl mt-4 mb-3">{service.title}</h3>

@@ -2,15 +2,7 @@
 @font-face {
   font-family: "Blender Pro Book";
   font-display: swap;
-  src: url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
-  src: url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2")
-      format("woff2"),
-    url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff")
-      format("woff"),
-    url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf")
-      format("truetype");
+  src: url(/fonts/335787aa6f57d71cabe8eb5dc89c6d6b.woff2) format("woff2");
 }
 @font-face {
   font-display: swap;

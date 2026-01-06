@@ -11,7 +11,7 @@ function ProjectModal({ project, isOpen, onClose, styles }) {
       onClose={onClose}
     >
       <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
-        <div className="flex min-h-full lg:items-center justify-center py-5 px-6 lg:px-16">
+        <div className="flex min-h-full lg:items-center justify-center py-25 px-6 lg:px-16 bg-black/50">
           <DialogPanel
             transition
             className="w-full min-w-full max-w-md rounded-xl bg-white/1 p-6 backdrop-blur-2xl duration-300 ease-out data-closed:transform-[scale(95%)] data-closed:opacity-0"
@@ -20,7 +20,7 @@ function ProjectModal({ project, isOpen, onClose, styles }) {
               <h3 className="text-4xl font-bold text-white">{project.title}</h3>
               <div className="h-fit">
                 <Button
-                  className="inline-flex items-center gap-2 rounded-md bg-(--primary) px-3 py-1.5 text-2xl font-semibold text-black shadow-inner shadow-white/10 hover:bg-[#00ff23]"
+                  className="inline-flex items-center gap-2 rounded-md bg-(--primary) px-3 py-1.5 text-2xl font-bold text-black shadow-inner shadow-white/10 hover:bg-[#00ff23]"
                   onClick={onClose}
                 >
                   X
