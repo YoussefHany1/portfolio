@@ -11,7 +11,7 @@ export default defineConfig({
         manualChunks: {
           vendor: ["react", "react-dom", "react-router-dom"],
           // فصل مكتبات الرسوم والـ UI الثقيلة
-          animation: ["lottie-web", "ogl"],
+          animation: ["lottie-web"],
           ui: ["@splidejs/react-splide", "sweetalert2", "@headlessui/react"],
           utils: ["@emailjs/browser"],
         },
