@@ -1,11 +1,7 @@
-import lottie from "lottie-web/build/player/lottie_light";
-import { defineElement } from "@lordicon/element";
-import { useState } from "react";
+import { useState, lazy } from "react";
 import styles from "./projects.module.css";
 import ProjectCard from "./ProjectCard";
-import ProjectModal from "./ProjectModal";
-
-defineElement(lottie.loadAnimation);
+const ProjectModal = lazy(() => import("./ProjectModal"));
 
 // Project data configuration
 const PROJECTS_DATA = [
@@ -61,9 +57,11 @@ const PROJECTS_DATA = [
       "Gaming Zone is a dynamic and responsive web application built with Next.js that aggregates and displays the latest gaming news from multiple trusted sources like IGN, Game Informer, and VG247. Designed for gaming enthusiasts, the platform collects articles via RSS feeds, converts them into structured JSON, and presents them in an engaging and modern UI.",
     thumbnail: "/screenshots/gaming-zone/1.webp",
     screenshots: [
+      "/screenshots/gaming-zone/1.webp",
       "/screenshots/gaming-zone/2.webp",
       "/screenshots/gaming-zone/3.webp",
       "/screenshots/gaming-zone/4.webp",
+      "/screenshots/gaming-zone/5.webp",
     ],
     details: {
       overview:

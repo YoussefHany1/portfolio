@@ -20,7 +20,7 @@ const SOCIAL_LINKS = [
   {
     id: "github",
     url: "https://github.com/YoussefHany1",
-    icon: "/icons/github.json",
+    icon: "/icons/github2.json",
     trigger: "hover",
   },
   {
@@ -108,7 +108,7 @@ const HoloInput = ({ type = "text", name, id, label }) => {
 };
 
 const SocialIcon = ({ link }) => (
-  <asendvpbspaecvpbspaec
+  <div
     href={link.url}
     target="_blank"
     rel="noopener noreferrer"
@@ -119,14 +119,14 @@ const SocialIcon = ({ link }) => (
       trigger={link.trigger}
       style={{ width: "70px", height: "70px" }}
     />
-  </asendvpbspaecvpbspaec>
+  </div>
 );
 
 const SubmitButton = ({ isSubmitting }) => (
   <button
     type="submit"
     disabled={isSubmitting}
-    className="send mt-3 font-sans font-semibold flex items-center bg-[#cbcbcb1a] border border-gray-300/25 lg:duration-300 text-white rounded-md p-2 px-4 hover:border-(--primary) hover:[box-shadow:0_0_5px_var(--primary),_0_0_25px_var(--primary),_0_0_75px_var(--primary)] disabled:opacity-50 disabled:cursor-not-allowed"
+    className="send mt-3 font-sans font-semibold cursor-pointer flex items-center bg-[#cbcbcb1a] border border-gray-300/25 lg:duration-300 text-white rounded-md p-2 px-4 hover:border-(--primary) hover:[box-shadow:0_0_5px_var(--primary),_0_0_25px_var(--primary),_0_0_75px_var(--primary)] disabled:opacity-50 disabled:cursor-not-allowed"
   >
     <lord-icon
       src="/icons/send.json"
@@ -151,7 +151,7 @@ const MoreInfoSection = () => (
       href={RESUME_LINK}
       target="_blank"
       rel="noopener noreferrer"
-      className="download rounded-md p-4 font-sans border border-gray-300/25 lg:duration-300 hover:border-(--primary) hover:[box-shadow:0_0_5px_var(--primary),_0_0_25px_var(--primary),_0_0_75px_var(--primary)] text-white flex items-center font-semibold"
+      className="download rounded-md px-4 py-1 font-sans border border-gray-300/25 lg:duration-300 hover:border-(--primary) hover:[box-shadow:0_0_5px_var(--primary),_0_0_25px_var(--primary),_0_0_75px_var(--primary)] text-white flex items-center font-semibold"
     >
       <lord-icon
         src="/icons/view.json"

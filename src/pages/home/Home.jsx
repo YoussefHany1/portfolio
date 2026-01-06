@@ -1,4 +1,6 @@
 import { lazy } from "react";
+import lottie from "lottie-web/build/player/lottie_light";
+import { defineElement } from "@lordicon/element";
 import Background from "../../components/background/Background.jsx";
 import Header from "../../components/home/Header/Header.jsx";
 const OurServices = lazy(() =>
@@ -10,6 +12,8 @@ const Projects = lazy(() =>
 );
 const Contact = lazy(() => import("../../components/home/Contact/Contact.jsx"));
 const Footer = lazy(() => import("../../components/home/Footer/Footer.jsx"));
+
+defineElement(lottie.loadAnimation);
 
 function Home() {
   return (

@@ -64,7 +64,7 @@ function Navbar() {
                   href={link.href}
                   onClick={closeMenu}
                   className="
-                  text-3xl uppercase text-white fw-semibold w-full py-4 px-12 lg:px-6 lg:py-2 rounded-lg transition-all duration-200 ease-in-out lg:hover:shadow-[0_0_20px_var(--primary)] hover:bg-(--primary) hover:text-black hover:font-bold
+                  text-2xl uppercase text-white fw-semibold w-full py-4 px-12 lg:px-6 lg:py-2 rounded-lg transition-all duration-200 ease-in-out lg:hover:shadow-[0_0_20px_var(--primary)] hover:bg-(--primary) hover:text-black hover:font-bold
                 "
                 >
                   {link.label}

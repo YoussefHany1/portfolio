@@ -31,6 +31,8 @@ function ProjectCard({ project, onOpenModal, styles }) {
 
       <img
         src={project.thumbnail}
+        width="522"
+        height="293"
         className="rounded w-full max-w-xl min-w-72"
         loading="lazy"
         alt={project.title}

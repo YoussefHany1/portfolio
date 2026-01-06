@@ -30,14 +30,14 @@ function ServiceCard({ service }) {
   const iconRef = useRef(null);
 
   return (
-    <div className="flex-1 min-w-[280px] text-white border-2 border-[#16c72e] lg:border-gray-300/25 transition-all duration-300 mx-4 p-6 text-center rounded-md mb-12 md:mb-0 hover:border-2 hover:border-[#16c72e] lg:hover:shadow-[0_0_20px_5px_#16c72e]">
+    <div className="flex-1 min-w-[280px] items-center text-white border-2 border-[#16c72e] lg:border-gray-300/25 transition-all duration-300 mx-4 p-6 text-center rounded-md mb-12 md:mb-0 hover:border-2 hover:border-[#16c72e] lg:hover:shadow-[0_0_20px_5px_#16c72e]">
       <lord-icon
         ref={iconRef}
         src={service.icon}
         trigger="loop"
         delay={service.delay}
         colors="primary:#16c72e"
-        style={{ width: "300px", height: "130px" }}
+        style={{ width: "100%", height: "150px" }}
         aria-hidden="true"
       />
       <h3 className="font-bold text-xl mt-4 mb-3">{service.title}</h3>
