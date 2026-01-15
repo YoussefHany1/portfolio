@@ -44,7 +44,7 @@ const SOCIAL_LINKS = [
 ];
 
 const RESUME_LINK =
-  "https://drive.google.com/file/d/1p-dkLP_VNOLx5BYazsnrI8pHUaJA_oG8/view?usp=drive_link";
+  "https://drive.google.com/file/d/1gNm6BgRLc4zwqN__mPMEvUJtYRLYlLx_/view?usp=sharing";
 
 // Inputs Component
 const HoloInput = ({ type = "text", name, id, label }) => {
