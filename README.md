@@ -1,4 +1,4 @@
-# Personal Portfolio React Project
+# Personal Portfolio React & Next.js Project
 
 ## Table of Contents
 
@@ -15,26 +15,27 @@
 
 ## Project Overview
 
-This is a personal portfolio project built with React. It serves as a showcase for my skills, experience, and projects. The application is designed to be fully responsive and easily customizable.
+This is a personal portfolio project built with Next.js (App Router) and React 19. It serves as a showcase for my skills, experience, and projects. The application is designed to be fully responsive, easily customizable, and heavily optimized using Next.js Server Components.
 
-> **Note:** The project is still under development. Features and content will be updated regularly as new sections are completed.
+> **Note:** The project is actively maintained. Features and content are updated regularly.
 
 ## Features
 
-- **Homepage:** Engaging hero section with a brief introduction.
-- **About Me:** Detailed bio, skills, and professional background.
-- **Projects Gallery:** Interactive display of completed and in-progress projects.
+- **Next.js App Router:** Deeply integrated Server and Client Components for maximum performance.
+- **Dynamic Animations:** Interactive WebGL Aurora backgrounds (OGL), GSAP-powered scroll reveal, and Spotlight hover effects.
+- **Performance Optimized:** Lazy loading & code-splitting using `next/dynamic` and Next.js Image optimization.
+- **Mobile Responsive:** Smart animation rendering that disables heavy WebGL and hover effects on smaller screens to preserve battery and performance.
+- **Homepage:** Engaging hero section with Lottie/LordIcon integration and decrypt text effects.
+- **Services & Projects Gallery:** Dedicated layouts with interactive Splide.js carousels and dynamic filtering.
 - **Contact Form:** Allows visitors to get in touch directly.
-- **Responsive Design:** Optimized for desktop, tablet, and mobile.
-- **Dark/Light Mode Toggle (Coming Soon):** User-friendly theme switching.
 
 ## Tech Stack
 
-- **Frontend:** React, JavaScript (ES6+)
-- **Styling:** CSS Modules / Tailwindcss
-- **Routing:** React Router
+- **Framework:** Next.js 16, React 19
+- **Styling:** Tailwind CSS v4, CSS Modules
+- **Animations:** GSAP, OGL (WebGL Aurora), React Splide
+- **Icons & Assets:** LordIcon, Lottie-web
 - **Form Handling:** Email.js
-- **Icons:** SVG
 - **Deployment:** Vercel
 
 ## Installation
@@ -50,54 +51,37 @@ This is a personal portfolio project built with React. It serves as a showcase f
 
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
 3. **Start the development server**
 
    ```bash
-   npm start
-   # or
-   yarn start
+   npm run dev
    ```
 
 4. **Build for production**
    ```bash
    npm run build
-   # or
-   yarn build
+   npm start
    ```
 
 ## Usage
 
-- Navigate to `http://localhost:5173` in your browser to view the development build.
-- Edit components in the `src/` directory to customize content and styling.
-- Update project details and images in the `src/data` folder.
+- Navigate to `http://localhost:3000` in your browser to view the development build.
+- Global styles and layouts are located in `src/app/globals.css` and `src/app/layout.jsx`.
+- Update project details in `src/data/projectsData.js`.
 
 ## Folder Structure
 
 ```
-├── public/
-│   ├── index.html
-│   └── assets/
-│       └── images/
+├── public/                 # Static assets
 ├── src/
-│   ├── components/
-│   │   ├── Footer/
-│   │   ├── home/
-│   │   └── Navbar/
-│   ├── pages/
-│   │   ├── home
-│   │   └── projects
-│   ├── assets/
-│   ├── App.css
-│   ├── App.jsx
-│   └── main.jsx
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package-lock.json
+│   ├── animations/         # Custom GSAP, WebGL, and Framer effects
+│   ├── app/                # Next.js App Router (pages & layouts)
+│   ├── components/         # Reusable UI components (Navbar, Footer, Home)
+│   └── data/               # Static data files (Projects, Skills)
+├── .env                    # Environment variables
+├── postcss.config.mjs      # PostCSS configuration
 ├── package.json
 └── README.md
 ```

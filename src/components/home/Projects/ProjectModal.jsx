@@ -1,6 +1,7 @@
 import { Button, Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 import ProjectDetails from "./ProjectDetails";
 import ProjectLinks from "./ProjectLinks";
+import Image from "next/image";
 
 function ProjectModal({ project, isOpen, onClose, styles }) {
   return (
@@ -34,7 +35,7 @@ function ProjectModal({ project, isOpen, onClose, styles }) {
 
                 <ProjectDetails details={project.details} />
 
-                <div className={`skills pt-4 ${styles.skills}`}>
+                <div className="skills pt-4">
                   <h5 className="font-semibold mb-2">
                     Skills and deliverables
                   </h5>
@@ -55,10 +56,13 @@ function ProjectModal({ project, isOpen, onClose, styles }) {
 
               <div className="w-full lg:w-2/3 lg:px-12 mt-6">
                 {project.screenshots.map((screenshot, index) => (
-                  <img
+                  <Image
+                    unoptimized
+                    width={1050}
+                    height={591}
                     key={index}
                     src={screenshot}
-                    className="rounded mb-6 aspect-video"
+                    className="rounded mb-6 aspect-video w-full h-auto"
                     loading="lazy"
                     alt={`${project.title} screenshot ${index + 1}`}
                   />

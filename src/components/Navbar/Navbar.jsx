@@ -1,11 +1,14 @@
+"use client";
+
 import { useState } from "react";
 import styles from "./navbar.module.css";
+import PillNav from "../../animations/PillNav";
 
 const NAV_LINKS = [
-  { label: "Home", href: "#" },
-  { label: "Services", href: "#services" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/services" },
+  { label: "Projects", href: "/projects" },
+  { label: "Contact", href: "/contact" },
 ];
 
 function Navbar() {
@@ -28,7 +31,7 @@ function Navbar() {
         </a>
 
         {/* Mobile Menu Button */}
-        <div className="menu flex-grow-0 flex lg:[clip-path:polygon(16px_0px,100%_0px,100%_30px,calc(100%-18px)_48px,0px_1000%,0px_16px)]">
+        <div className="menu grow-0 flex lg:[clip-path:polygon(24px_8px,100%_0px,100%_26px,calc(100%-19px)_45px,0px_1000%,0px_31px)]">
           <button
             onClick={toggleMenu}
             className="p-2 text-gray-700 rounded-lg border lg:hidden bg-(--primary)"
@@ -53,25 +56,12 @@ function Navbar() {
           </button>
 
           {/* Navigation Links */}
-          <ul
-            className={`right-0 lg:flex border border-(--primary) bg-black/50 ${
-              isMenuOpen ? "block absolute top-17 right-6" : "hidden"
-            } ${styles.menuList}`}
-          >
-            {NAV_LINKS.map((link) => (
-              <li key={link.label} className="nav-item flex">
-                <a
-                  href={link.href}
-                  onClick={closeMenu}
-                  className="
-                  text-2xl uppercase text-white fw-semibold w-full py-4 px-12 lg:px-6 lg:py-2 rounded-lg transition-all duration-200 ease-in-out lg:hover:shadow-[0_0_20px_var(--primary)] hover:bg-(--primary) hover:text-black hover:font-bold
-                "
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <PillNav
+            items={NAV_LINKS}
+            onItemClick={closeMenu}
+            className={`right-0 lg:flex border border-(--primary) bg-black/50 overflow-hidden ${isMenuOpen ? "block absolute top-17 right-6 p-4 rounded-xl" : "hidden"
+              } ${styles.menuList}`}
+          />
         </div>
       </div>
     </nav>

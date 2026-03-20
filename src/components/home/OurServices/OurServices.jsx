@@ -1,4 +1,6 @@
+"use client";
 import { useRef } from "react";
+import SpotlightCard from "../../../animations/SpotlightCard.jsx";
 
 const SERVICES_DATA = [
   {
@@ -30,7 +32,7 @@ function ServiceCard({ service }) {
   const iconRef = useRef(null);
 
   return (
-    <div className="flex-1 min-w-[280px] items-center text-white border-2 border-[#16c72e] lg:border-gray-300/25 transition-all duration-300 mx-4 p-6 text-center rounded-md mb-12 md:mb-0 hover:border-2 hover:border-[#16c72e] lg:hover:shadow-[0_0_20px_5px_#16c72e]">
+    <SpotlightCard className="custom-spotlight-card flex-1 min-w-[280px] items-center text-white border-2 border-[#16c72e] lg:border-gray-300/25 transition-all duration-300 mx-4 p-6 text-center rounded-md mb-12 md:mb-0 hover:border-2 hover:border-[#16c72e] lg:hover:shadow-[0_0_20px_5px_#16c72e]" spotlightColor="rgba(22, 199, 46, 0.2)">
       <lord-icon
         ref={iconRef}
         src={service.icon}
@@ -44,7 +46,7 @@ function ServiceCard({ service }) {
       <p className="font-sans text-gray-400 leading-relaxed">
         {service.description}
       </p>
-    </div>
+    </SpotlightCard>
   );
 }
 

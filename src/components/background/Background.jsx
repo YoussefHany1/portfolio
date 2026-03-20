@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef } from "react";
 
 function Background() {
@@ -88,10 +90,12 @@ function Background() {
   }, []);
 
   return (
-    <canvas
-      ref={canvasRef}
-      className="absolute z-[-1] opacity-30 inset-0 w-full h-full pointer-events-none"
-    ></canvas>
+    <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
+      <canvas
+        ref={canvasRef}
+        className="w-full h-full opacity-30"
+      ></canvas>
+    </div>
   );
 }
 

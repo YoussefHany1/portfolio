@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import Link from "next/link";
 import Background from "./Background.jsx";
 const FuzzyText = ({
     children,
@@ -212,7 +213,7 @@ const App = () => {
             <FuzzyText baseIntensity={0.2} hoverIntensity={0.5} enableHover={true} className="">
                 404
             </FuzzyText>
-            <a href="/" className="text-white font-bold text-3xl mt-6 ml-6">Page Not Found</a>
+            <Link href="/" className="text-white font-bold text-3xl mt-6 ml-6">Page Not Found</Link>
         </div>
     );
 };

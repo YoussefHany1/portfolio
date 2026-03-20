@@ -1,3 +1,4 @@
+"use client";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
@@ -311,7 +312,7 @@ const SKILLS = [
 
 // Components
 const SkillCard = ({ skill }) => (
-  <SplideSlide className="skill-box flex justify-center p-4 border border-gray-300/25 items-center lg:!w-150 !w-72">
+  <SplideSlide className="skill-box flex justify-center p-4 border border-gray-300/25 items-center lg:w-150! w-72!">
     {skill.icon}
     <p className="uppercase text-white font-bold text-3xl ml-4">{skill.name}</p>
   </SplideSlide>

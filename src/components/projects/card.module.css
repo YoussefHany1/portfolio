@@ -6,12 +6,12 @@
 
 @property --c-mid {
   syntax: "<color>";
-  initial-value: #002e06;
+  initial-value: #00570c;
   inherits: false;
 }
 @property --c-dark {
   syntax: "<color>";
-  initial-value: #101010;
+  initial-value: #001f05;
   inherits: false;
 }
   .projectCardWrapper::before {

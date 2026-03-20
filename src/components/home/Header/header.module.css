@@ -7,21 +7,14 @@
 .header::after {
   content: "";
   display: block;
-  background: linear-gradient(180deg, transparent, #101010 80%);
+  background: linear-gradient(180deg, transparent, #101010 80%) !important;
   bottom: -53px;
   height: 302px;
   position: absolute;
   width: 100%;
   z-index: -1;
 }
-/* .animateCaret {
-  animation: blink 0.8s steps(1) infinite;
-}
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-} */
+
 @keyframes glow {
   0% {
     text-shadow: 0 0 13px #00ff0075, 0 0 15px #00ff0075, 0 0 60px #00ff0075;

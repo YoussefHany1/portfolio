@@ -1,13 +1,14 @@
-import { useRef, useState } from "react";
+"use client";
+
+import { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import "./contact.css";
 
-// Constants
 const EMAILJS_CONFIG = {
-  serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-  templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-  publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+  serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+  templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+  publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
 };
 
 const SOCIAL_LINKS = [
@@ -52,15 +53,14 @@ const HoloInput = ({ type = "text", name, id, label }) => {
 
   return (
     <div
-      className={`${name}-input-container relative w-full ${
-        type === "textarea" ? "h-25" : ""
-      }`}
+      className={`${name}-input-container relative w-full ${type === "textarea" ? "h-25" : ""
+        }`}
     >
       {type === "textarea" ? (
         <textarea
           name={name}
           id={id}
-          className="holo-input h-25 w-full border-b-2 border-neutral-800 outline-none px-4 text-(--primary) text-lg transition-colors duration-300 ease-in-out focus:border-transparent"
+          className="holo-input h-25 w-full bg-[#2323239c] backdrop-blur-md border-b-2 border-neutral-800 outline-none px-4 text-(--primary) text-lg transition-colors duration-300 ease-in-out focus:border-transparent"
           placeholder=""
           required
         />
@@ -69,7 +69,7 @@ const HoloInput = ({ type = "text", name, id, label }) => {
           type={type}
           name={name}
           id={id}
-          className="holo-input w-full h-14 border-b-2 border-neutral-800 outline-none px-4 text-(--primary) text-lg transition-colors duration-300 ease-in-out focus:border-transparent"
+          className="holo-input w-full h-14 bg-[#2323239c] border-b-2 border-neutral-800 outline-none px-4 text-(--primary) text-lg transition-colors duration-300 ease-in-out focus:border-transparent"
           placeholder=""
           required
         />
@@ -123,22 +123,24 @@ const SocialIcon = ({ link }) => (
 );
 
 const SubmitButton = ({ isSubmitting }) => (
-  <button
-    type="submit"
-    disabled={isSubmitting}
-    className="send mt-3 font-sans font-semibold cursor-pointer flex items-center bg-[#cbcbcb1a] border border-gray-300/25 lg:duration-300 text-white rounded-md p-2 px-4 hover:border-(--primary) hover:[box-shadow:0_0_5px_var(--primary),_0_0_25px_var(--primary),_0_0_75px_var(--primary)] disabled:opacity-50 disabled:cursor-not-allowed"
-  >
-    <lord-icon
-      src="/icons/send.json"
-      trigger="loop"
-      style={{ width: "35px", height: "35px", marginRight: "8px" }}
-    />
-    {isSubmitting ? "Sending..." : "Send"}
-  </button>
+  <div className="tooltip" data-tip="Send Message to my email">
+    <button
+      type="submit"
+      disabled={isSubmitting}
+      className="send mt-3 font-sans font-semibold cursor-pointer flex items-center bg-[#cbcbcb1a] border border-gray-300/25 lg:duration-300 text-white rounded-md p-2 px-4 hover:border-(--primary) hover:[box-shadow:0_0_5px_var(--primary),_0_0_25px_var(--primary),_0_0_75px_var(--primary)] disabled:opacity-50 disabled:cursor-not-allowed"
+    >
+      <lord-icon
+        src="/icons/send.json"
+        trigger="loop"
+        style={{ width: "35px", height: "35px", marginRight: "8px" }}
+      />
+      {isSubmitting ? "Sending..." : "Send"}
+    </button>
+  </div>
 );
 
 const MoreInfoSection = () => (
-  <div className="box flex flex-col items-center justify-between p-4 lg:p-12 rounded-md mb-12 lg:mb-0 bg-[#cbcbcb1a]">
+  <div className="box flex flex-col items-center justify-between p-4 lg:p-12 rounded-md mb-12 lg:mb-0 bg-[#2323239c]">
     <h3 className="text-center text-3xl">More Info</h3>
 
     <div className="social flex flex-wrap lg:flex-nowrap justify-center items-center py-12">
@@ -146,21 +148,22 @@ const MoreInfoSection = () => (
         <SocialIcon key={link.id} link={link} />
       ))}
     </div>
-
-    <a
-      href={RESUME_LINK}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="download rounded-md px-4 py-1 font-sans border border-gray-300/25 lg:duration-300 hover:border-(--primary) hover:[box-shadow:0_0_5px_var(--primary),_0_0_25px_var(--primary),_0_0_75px_var(--primary)] text-white flex items-center font-semibold"
-    >
-      <lord-icon
-        src="/icons/view.json"
-        trigger="loop"
-        delay="1000"
-        style={{ width: "50px", height: "50px", marginRight: "8px" }}
-      />
-      View Resume
-    </a>
+    <div className="tooltip" data-tip="View Resume on Google Drive">
+      <a
+        href={RESUME_LINK}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="download rounded-md px-4 py-1 font-sans border border-gray-300/25 lg:duration-300 hover:border-(--primary) hover:[box-shadow:0_0_5px_var(--primary),_0_0_25px_var(--primary),_0_0_75px_var(--primary)] text-white flex items-center font-semibold"
+      >
+        <lord-icon
+          src="/icons/view.json"
+          trigger="loop"
+          delay="1000"
+          style={{ width: "50px", height: "50px", marginRight: "8px" }}
+        />
+        View Resume
+      </a>
+    </div>
   </div>
 );
 
@@ -168,6 +171,17 @@ const MoreInfoSection = () => (
 function Contact() {
   const formRef = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    import("lottie-web/build/player/lottie_light").then((lottie) => {
+      import("@lordicon/element").then(({ defineElement }) => {
+        // Prevent re-defining the element and crashing if it already exists from a previous fast refresh
+        if (!customElements.get("lord-icon")) {
+          defineElement(lottie.default.loadAnimation);
+        }
+      });
+    });
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -204,7 +218,7 @@ function Contact() {
 
   return (
     <section
-      className="contact px-4 lg:px-12 border-t border-gray-300/25"
+      className="contact px-4 lg:px-12 "
       id="contact"
     >
       <h2 className="uppercase text-white text-3xl mt-12 font-bold text-center md:text-start">
