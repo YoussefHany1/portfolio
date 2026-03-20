@@ -107,6 +107,5 @@ Thumbs.db
 
 # Database data
 data/published.db
-data/
 
 src/diagnose.js
