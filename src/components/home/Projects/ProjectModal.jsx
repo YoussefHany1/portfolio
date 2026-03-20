@@ -1,6 +1,7 @@
 import { Button, Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 import ProjectDetails from "./ProjectDetails";
-import ProjectLinks from "./ProjectLinks";
+import dynamic from "next/dynamic";
+const ProjectLinks = dynamic(() => import("./ProjectLinks"));
 import Image from "next/image";
 
 function ProjectModal({ project, isOpen, onClose, styles }) {
@@ -57,13 +58,13 @@ function ProjectModal({ project, isOpen, onClose, styles }) {
               <div className="w-full lg:w-2/3 lg:px-12 mt-6">
                 {project.screenshots.map((screenshot, index) => (
                   <Image
-                    unoptimized
                     width={1050}
                     height={591}
                     key={index}
                     src={screenshot}
                     className="rounded mb-6 aspect-video w-full h-auto"
                     loading="lazy"
+                    sizes="(max-width: 1024px) 100vw, 66vw"
                     alt={`${project.title} screenshot ${index + 1}`}
                   />
                 ))}

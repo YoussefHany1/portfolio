@@ -22,17 +22,10 @@ export default function RootLayout({ children }) {
           type="font/woff2"
           crossOrigin="anonymous"
         />
-        <link rel="preconnect" href="https://db.onlinewebfonts.com" />
-        <link
-          rel="preconnect"
-          href="https://db.onlinewebfonts.com"
-          crossOrigin="anonymous"
-        />
-        <link rel="preconnect" href="https://cdn.lordicon.com" />
       </head>
       <body className="overflow-x-hidden">
         <Navbar />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );

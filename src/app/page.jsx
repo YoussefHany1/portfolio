@@ -1,9 +1,9 @@
 import dynamic from "next/dynamic";
-import Background from "../components/background/Background.jsx";
 import Header from "../components/home/Header/Header.jsx";
-import Aurora from "../animations/Aurora.jsx";
-import AnimatedContent from "../animations/AnimatedContent.jsx";
-import LordIconInit from "../components/home/LordIconInit.jsx";
+import Background from "../components/background/Background.jsx";
+const Aurora = dynamic(() => import("../animations/Aurora.jsx"));
+const LordIconInit = dynamic(() => import("../components/home/LordIconInit.jsx"));
+const AnimatedContent = dynamic(() => import("../animations/AnimatedContent.jsx"));
 
 const OurServices = dynamic(() =>
   import("../components/home/OurServices/OurServices.jsx")

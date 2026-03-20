@@ -5,9 +5,9 @@ import dynamic from "next/dynamic";
 import ProjectCard from "../../components/projects/Card";
 import { PROJECTS_DATA } from "../../data/projectsData";
 const ProjectModal = dynamic(() => import("../../components/home/Projects/ProjectModal"));
-import styles from "../../components/home/Projects/projects.module.css";
 import Background from "../../components/background/Background";
 import AnimatedContent from "../../animations/AnimatedContent";
+import styles from "../../components/home/Projects/projects.module.css";
 
 function Projects() {
   const [openModalId, setOpenModalId] = useState(null);

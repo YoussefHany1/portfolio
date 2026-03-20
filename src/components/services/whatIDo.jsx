@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
-import SpotlightCard from '../../animations/SpotlightCard'
+import dynamic from "next/dynamic";
+const SpotlightCard = dynamic(() => import('../../animations/SpotlightCard'))
 
 const DETAILED_SERVICES = [
     {

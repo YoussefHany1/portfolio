@@ -35,6 +35,5 @@
     "eslint": "^9.33.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "globals": "^16.3.0"
-  },
-  "browserslist": "> 1%"
+  }
 }

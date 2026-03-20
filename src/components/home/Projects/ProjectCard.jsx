@@ -1,6 +1,7 @@
 import Image from "next/image";
+import dynamic from "next/dynamic";
+const SpotlightCard = dynamic(() => import("../../../animations/SpotlightCard.jsx"));
 import styles from "./projects.module.css";
-import SpotlightCard from "../../../animations/SpotlightCard.jsx";
 
 function ProjectCard({ project, onOpenModal }) {
   return (
@@ -38,8 +39,9 @@ function ProjectCard({ project, onOpenModal }) {
                   height={324}
                   key={index}
                   src={screenshot}
-                  className="rounded w-full"
+                  className="rounded w-full h-auto"
                   loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   alt={`${project.title} screenshot ${index + 1}`}
                 />
               ))}

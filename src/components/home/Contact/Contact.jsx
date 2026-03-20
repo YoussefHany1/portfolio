@@ -108,7 +108,7 @@ const HoloInput = ({ type = "text", name, id, label }) => {
 };
 
 const SocialIcon = ({ link }) => (
-  <div
+  <a
     href={link.url}
     target="_blank"
     rel="noopener noreferrer"
@@ -119,7 +119,7 @@ const SocialIcon = ({ link }) => (
       trigger={link.trigger}
       style={{ width: "70px", height: "70px" }}
     />
-  </div>
+  </a>
 );
 
 const SubmitButton = ({ isSubmitting }) => (

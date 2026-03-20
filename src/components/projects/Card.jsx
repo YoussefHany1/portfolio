@@ -12,6 +12,7 @@ function ProjectCard({ project, onOpenModal }) {
             height="162"
             className="rounded"
             loading="lazy"
+            sizes="(max-width: 768px) 100vw, 288px"
             alt={project.title}
           />
           <div className="text text-white mt-3 text-center">
