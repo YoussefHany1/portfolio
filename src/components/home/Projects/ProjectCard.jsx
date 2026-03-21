@@ -41,7 +41,7 @@ function ProjectCard({ project, onOpenModal }) {
                   src={screenshot}
                   className="rounded w-full h-auto"
                   loading="lazy"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  sizes="(max-width: 576px) 100vw, 576px"
                   alt={`${project.title} screenshot ${index + 1}`}
                 />
               ))}

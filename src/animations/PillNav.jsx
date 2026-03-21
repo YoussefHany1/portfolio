@@ -22,11 +22,16 @@ const PillNav = ({
 
     useEffect(() => {
         const layout = () => {
+            const measurements = [];
             circleRefs.current.forEach((circle, i) => {
                 if (!circle?.parentElement) return;
 
                 const pill = circle.parentElement;
                 const rect = pill.getBoundingClientRect();
+                measurements.push({ circle, pill, rect, i });
+            });
+
+            measurements.forEach(({ circle, pill, rect, i }) => {
                 const { width: w, height: h } = rect;
                 const R = ((w * w) / 4 + h * h) / (2 * h);
                 const D = Math.ceil(2 * R) + 2;
