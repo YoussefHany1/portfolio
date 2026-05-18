@@ -1,5 +1,5 @@
 .headerContent h1 {
-  font-family: Refinery-25 !important;
+  font-family: var(--font-refinery-25), sans-serif !important;
   will-change: text-shadow;
   animation: glow 3s infinite ease-in-out;
 }

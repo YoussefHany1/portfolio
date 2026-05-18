@@ -1,21 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-@font-face {
-  font-family: "Blender Pro Book";
-  font-display: swap;
-  src: url(/fonts/335787aa6f57d71cabe8eb5dc89c6d6b.woff2) format("woff2");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: Refinery-25;
-  font-style: normal;
-  font-weight: 600;
-  src: url(/fonts/Refinery-25SemiBold-dac0d12b.woff2) format("woff2"),
-    url(/fonts/Refinery-25SemiBold-8a4883af.woff) format("woff");
-}
-
 @theme {
   --animate-spin-gradient: spin-gradient 2.5s linear infinite;
   --animate-progress: circle-progress 1.5s ease-out forwards;
@@ -50,7 +35,7 @@
 
 body {
   background-color: transparent !important;
-  font-family: "Blender Pro Book", "sans-serif" !important;
+  font-family: var(--font-blender-pro), "sans-serif" !important;
 }
 
 ::-webkit-scrollbar {

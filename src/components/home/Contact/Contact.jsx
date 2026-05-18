@@ -168,7 +168,7 @@ const MoreInfoSection = () => (
 );
 
 // Main Component
-function Contact() {
+function Contact({ titleTag: TitleTag = "h2" }) {
   const formRef = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -221,9 +221,9 @@ function Contact() {
       className="contact px-4 lg:px-12 "
       id="contact"
     >
-      <h2 className="uppercase text-white text-3xl mt-12 font-bold text-center md:text-start">
+      <TitleTag className="uppercase text-white text-3xl mt-12 font-bold text-center md:text-start">
         Contact Me
-      </h2>
+      </TitleTag>
 
       <div className="contact-content p-4 lg:p-12 lg:mx-5 flex flex-col lg:flex-row text-white items-center justify-between">
         <form

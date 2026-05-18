@@ -24,7 +24,7 @@ function Projects() {
 
       <div className="project-content p-5 flex flex-col items-center gap-12">
         {PROJECTS_DATA.map((project) => (
-          <div key={project.id}>
+          <article key={project.id}>
             <ProjectCard
               project={project}
               onOpenModal={() => handleOpenModal(project.id)}
@@ -37,7 +37,7 @@ function Projects() {
               onClose={handleCloseModal}
               styles={styles}
             />
-          </div>
+          </article>
         ))}
       </div>
     </section>
