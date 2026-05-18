@@ -29,6 +29,7 @@ function ProjectCard({ project, onOpenModal }) {
                   trigger="hover"
                   colors="primary:#16c72e"
                   style={{ width: "70px", height: "70px", transform: "rotate(320deg)" }}
+                  aria-label='View Project Details'
                 />
               </button>
             </div>

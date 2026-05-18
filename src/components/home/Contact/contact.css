@@ -8,16 +8,7 @@
 
   font-family: var(--font-family);
 }
-/* --- Floating Label --- */
-.holo-input:focus + .input-label,
-.holo-input:not(:placeholder-shown) + .input-label {
-  top: -1.5rem;
-  left: 0;
-  font-size: 0.8rem;
-  opacity: 1;
-  color: var(--primary);
-}
-
+/* --- Floating Label Glitch Animation --- */
 .holo-input:focus + .input-label::before,
 .holo-input:focus + .input-label::after {
   content: attr(data-text);
@@ -43,24 +34,8 @@
   transform: scaleY(0);
 }
 
-.holo-input:focus ~ .input-border {
-  opacity: 0.8;
-  border-color: var(--primary);
-}
-.holo-input:focus ~ .input-corners .corner {
-  width: 1.25rem;
-  height: 1.25rem;
-  border-width: 3px;
-  opacity: 1;
-}
-.holo-input:focus ~ .input-glow {
-  opacity: 1;
-}
 .holo-input:focus ~ .input-scanline {
   animation: scan-vertical 4s linear infinite;
-}
-.holo-input:focus ~ .input-data-stream {
-  opacity: 1;
 }
 .holo-input:focus ~ .input-data-stream .stream-bar {
   animation: data-pulse 2s infinite;

@@ -3,14 +3,15 @@ import { useRef, useState } from 'react';
 
 const SpotlightCard = ({ children, className = '', spotlightColor = 'rgba(255, 255, 255, 0.25)' }) => {
     const divRef = useRef(null);
+    const rectRef = useRef(null);
     const [isFocused, setIsFocused] = useState(false);
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [opacity, setOpacity] = useState(0);
 
     const handleMouseMove = e => {
-        if (!divRef.current || isFocused) return;
+        if (!divRef.current || isFocused || !rectRef.current) return;
 
-        const rect = divRef.current.getBoundingClientRect();
+        const rect = rectRef.current;
         setPosition({ x: e.clientX - rect.left, y: e.clientY - rect.top });
     };
 
@@ -25,10 +26,14 @@ const SpotlightCard = ({ children, className = '', spotlightColor = 'rgba(255, 2
     };
 
     const handleMouseEnter = () => {
+        if (divRef.current) {
+            rectRef.current = divRef.current.getBoundingClientRect();
+        }
         setOpacity(0.6);
     };
 
     const handleMouseLeave = () => {
+        rectRef.current = null;
         setOpacity(0);
     };
 

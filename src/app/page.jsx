@@ -27,7 +27,6 @@ export const metadata = {
   },
 };
 const Aurora = dynamic(() => import("../animations/Aurora.jsx"));
-const LordIconInit = dynamic(() => import("../components/home/LordIconInit.jsx"));
 const AnimatedContent = dynamic(() => import("../animations/AnimatedContent.jsx"));
 
 const OurServices = dynamic(() =>
@@ -45,7 +44,6 @@ const Footer = dynamic(() => import("../components/home/Footer/Footer.jsx"));
 function Home() {
   return (
     <>
-      <LordIconInit />
       <div className="relative z-10 w-full h-full">
         <Header />
         <LazyLoad minHeight="50vh">

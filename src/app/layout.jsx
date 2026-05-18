@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import Navbar from "../components/navbar/Navbar";
+import LordIconInit from "../components/home/LordIconInit";
 import "./globals.css";
 
 // Load local fonts natively via Next.js Font Optimization to prevent CLS
@@ -28,17 +29,18 @@ const refinery25 = localFont({
 
 export const metadata = {
   title: {
-    default: "Youssef Hany | Front-End & Mobile App Developer",
+    default: "Youssef Hany | Front-End Developer",
     template: "%s | Youssef Hany",
   },
-  description: "Youssef Hany's Portfolio - Professional Front-End & Mobile App Developer specializing in building high-performance, responsive React, Next.js, and React Native applications.",
+  description: "Youssef Hany's Portfolio - Professional Front-End Developer specializing in building high-performance, responsive React, Next.js, and React Native applications.",
+  keywords: ['Front-End Developer', 'frontend developer', 'web developer', 'Next.js', 'React', 'React Native', 'portfolio', 'تصميم مواقع', 'مطور ويب', 'مصمم واجهات', 'Youssef Hany', 'يوسف هاني'],
   metadataBase: new URL("https://youssefhany.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Youssef Hany | Front-End & Mobile App Developer",
-    description: "Welcome to the professional portfolio of Youssef Hany. Explore custom-crafted, responsive, and performance-optimized web and mobile solutions.",
+    title: "Youssef Hany | Front-End  Developer",
+    description: "Welcome to the professional portfolio of Youssef Hany. Explore custom-crafted, responsive, and performance-optimized web solutions.",
     url: "https://youssefhany.vercel.app",
     siteName: "Youssef Hany Portfolio",
     images: [
@@ -54,7 +56,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Youssef Hany | Front-End & Mobile App Developer",
+    title: "Youssef Hany | Front-End Developer",
     description: "Explore custom-crafted web and mobile solutions built with React, Next.js, and React Native.",
     images: ["/icon.svg"],
   },
@@ -77,6 +79,7 @@ export default function RootLayout({ children }) {
       <body className={`${blenderPro.variable} ${refinery25.variable} overflow-x-hidden`}>
         <Navbar />
         <main>{children}</main>
+        <LordIconInit />
       </body>
     </html>
   );

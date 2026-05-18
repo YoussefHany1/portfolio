@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import "./contact.css";
@@ -17,30 +17,35 @@ const SOCIAL_LINKS = [
     url: "https://linkedin.com/in/yh5",
     icon: "/icons/linkedin.json",
     trigger: "hover",
+    ariaLabel: "Visit my LinkedIn Profile",
   },
   {
     id: "github",
     url: "https://github.com/YoussefHany1",
     icon: "/icons/github2.json",
     trigger: "hover",
+    ariaLabel: "Visit my GitHub profile",
   },
   {
     id: "whatsapp",
     url: "https://wa.me/qr/UET75FACE2XCH1",
     icon: "/icons/whatsapp.json",
     trigger: "hover",
+    ariaLabel: "Message me on WhatsApp Chat",
   },
   {
     id: "instagram",
     url: "https://www.instagram.com/y.hm10/",
     icon: "/icons/instagram.json",
     trigger: "morph",
+    ariaLabel: "Visit my Instagram Profile",
   },
   {
     id: "facebook",
     url: "https://www.facebook.com/youssef.hany0",
     icon: "/icons/facebook.json",
     trigger: "morph",
+    ariaLabel: "Visit my Facebook Profile",
   },
 ];
 
@@ -60,8 +65,8 @@ const HoloInput = ({ type = "text", name, id, label }) => {
         <textarea
           name={name}
           id={id}
-          className="holo-input h-25 w-full bg-[#2323239c] backdrop-blur-md border-b-2 border-neutral-800 outline-none px-4 text-(--primary) text-lg transition-colors duration-300 ease-in-out focus:border-transparent"
-          placeholder=""
+          className="holo-input peer h-25 w-full bg-[#2323239c] backdrop-blur-md border-b-2 border-neutral-800 outline-none px-4 text-(--primary) text-lg transition-colors duration-300 ease-in-out focus:border-transparent"
+          placeholder=" "
           required
         />
       ) : (
@@ -69,25 +74,25 @@ const HoloInput = ({ type = "text", name, id, label }) => {
           type={type}
           name={name}
           id={id}
-          className="holo-input w-full h-14 bg-[#2323239c] border-b-2 border-neutral-800 outline-none px-4 text-(--primary) text-lg transition-colors duration-300 ease-in-out focus:border-transparent"
-          placeholder=""
+          className="holo-input peer w-full h-14 bg-[#2323239c] border-b-2 border-neutral-800 outline-none px-4 text-(--primary) text-lg transition-colors duration-300 ease-in-out focus:border-transparent"
+          placeholder=" "
           required
         />
       )}
 
       <label
         htmlFor={id}
-        className="input-label absolute top-4 left-4 text-[var(--text-color)] opacity-60 uppercase tracking-wider transition-all duration-300 ease-in-out"
+        className="input-label absolute top-4 left-4 text-[var(--text-color)] opacity-60 uppercase tracking-wider transition-all duration-300 ease-in-out peer-focus:-top-6 peer-focus:left-0 peer-focus:text-xs peer-focus:opacity-100 peer-focus:text-(--primary) peer-not-placeholder-shown:-top-6 peer-not-placeholder-shown:left-0 peer-not-placeholder-shown:text-xs peer-not-placeholder-shown:opacity-100 peer-not-placeholder-shown:text-(--primary)"
         data-text={label}
       >
         {label}
       </label>
 
-      <div className="input-border absolute top-0 left-0 w-full h-full pointer-events-none border border-(--primary)/25 opacity-50 transition-all duration-300 ease-in-out" />
+      <div className="input-border absolute top-0 left-0 w-full h-full pointer-events-none border border-(--primary)/25 opacity-50 transition-all duration-300 ease-in-out peer-focus:opacity-80 peer-focus:border-(--primary)" />
       <div className="input-scanline opacity-0 absolute top-0 left-0 w-full h-full pointer-events-none bg-gradient-to-b from-transparent via-(--primary) to-transparent" />
-      <div className="input-glow absolute top-0 left-0 opacity-0 w-full h-full pointer-events-none bg-[radial-gradient(ellipse_at_center,rgba(22,199,46,0.3)_0%,transparent_70%)] transition-opacity duration-400 ease-in-out" />
+      <div className="input-glow absolute top-0 left-0 opacity-0 w-full h-full pointer-events-none bg-[radial-gradient(ellipse_at_center,rgba(22,199,46,0.3)_0%,transparent_70%)] transition-opacity duration-400 ease-in-out peer-focus:opacity-100" />
 
-      <div className="input-data-stream absolute bottom-0.5 left-0 w-full h-1 flex opacity-0 transition-opacity duration-300 ease-in-out delay-100">
+      <div className="input-data-stream absolute bottom-0.5 left-0 w-full h-1 flex opacity-0 transition-opacity duration-300 ease-in-out delay-100 peer-focus:opacity-100">
         {streamBars.map((i) => (
           <div
             key={i}
@@ -98,10 +103,10 @@ const HoloInput = ({ type = "text", name, id, label }) => {
       </div>
 
       <div className="input-corners absolute top-0 left-0 w-full h-full pointer-events-none">
-        <div className="corner corner-tl absolute w-4 h-4 border-2 border-(--primary) transition-all duration-300 ease-in-out opacity-50 -top-1 -left-1 !border-r-0 !border-b-0" />
-        <div className="corner corner-tr absolute w-4 h-4 border-2 border-(--primary) transition-all duration-300 ease-in-out opacity-50 -top-1 -right-1 !border-l-0 !border-b-0" />
-        <div className="corner corner-bl absolute w-4 h-4 border-2 border-(--primary) transition-all duration-300 ease-in-out opacity-50 -bottom-1 -left-1 !border-r-0 !border-t-0" />
-        <div className="corner corner-br absolute w-4 h-4 border-2 border-(--primary) transition-all duration-300 ease-in-out opacity-50 -bottom-1 -right-1 !border-l-0 !border-t-0" />
+        <div className="corner corner-tl absolute w-4 h-4 border-2 border-(--primary) transition-all duration-300 ease-in-out opacity-50 -top-1 -left-1 !border-r-0 !border-b-0 peer-focus:w-5 peer-focus:h-5 peer-focus:border-[3px] peer-focus:opacity-100" />
+        <div className="corner corner-tr absolute w-4 h-4 border-2 border-(--primary) transition-all duration-300 ease-in-out opacity-50 -top-1 -right-1 !border-l-0 !border-b-0 peer-focus:w-5 peer-focus:h-5 peer-focus:border-[3px] peer-focus:opacity-100" />
+        <div className="corner corner-bl absolute w-4 h-4 border-2 border-(--primary) transition-all duration-300 ease-in-out opacity-50 -bottom-1 -left-1 !border-r-0 !border-t-0 peer-focus:w-5 peer-focus:h-5 peer-focus:border-[3px] peer-focus:opacity-100" />
+        <div className="corner corner-br absolute w-4 h-4 border-2 border-(--primary) transition-all duration-300 ease-in-out opacity-50 -bottom-1 -right-1 !border-l-0 !border-t-0 peer-focus:w-5 peer-focus:h-5 peer-focus:border-[3px] peer-focus:opacity-100" />
       </div>
     </div>
   );
@@ -112,7 +117,7 @@ const SocialIcon = ({ link }) => (
     href={link.url}
     target="_blank"
     rel="noopener noreferrer"
-    aria-label={link.id}
+    aria-label={link.ariaLabel || link.id}
   >
     <lord-icon
       src={link.icon}
@@ -132,6 +137,7 @@ const SubmitButton = ({ isSubmitting }) => (
       <lord-icon
         src="/icons/send.json"
         trigger="loop"
+        aria-label='Send Message to my email'
         style={{ width: "35px", height: "35px", marginRight: "8px" }}
       />
       {isSubmitting ? "Sending..." : "Send"}
@@ -159,6 +165,7 @@ const MoreInfoSection = () => (
           src="/icons/view.json"
           trigger="loop"
           delay="1000"
+          aria-label='View Resume on Google Drive'
           style={{ width: "50px", height: "50px", marginRight: "8px" }}
         />
         View Resume
@@ -171,17 +178,6 @@ const MoreInfoSection = () => (
 function Contact({ titleTag: TitleTag = "h2" }) {
   const formRef = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  useEffect(() => {
-    import("lottie-web/build/player/lottie_light").then((lottie) => {
-      import("@lordicon/element").then(({ defineElement }) => {
-        // Prevent re-defining the element and crashing if it already exists from a previous fast refresh
-        if (!customElements.get("lord-icon")) {
-          defineElement(lottie.default.loadAnimation);
-        }
-      });
-    });
-  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

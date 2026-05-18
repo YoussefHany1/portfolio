@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import dynamic from "next/dynamic";
 const SpotlightCard = dynamic(() => import('../../animations/SpotlightCard'))
 
@@ -61,16 +61,6 @@ function ServiceFeature({ service }) {
 }
 
 function Services() {
-    useEffect(() => {
-        import("lottie-web/build/player/lottie_light").then((lottie) => {
-            import("@lordicon/element").then(({ defineElement }) => {
-                if (!customElements.get("lord-icon")) {
-                    defineElement(lottie.default.loadAnimation);
-                }
-            });
-        });
-    }, []);
-
     return (
         <div className="container mx-auto px-4 lg:px-16 pt-12">
             <h1 className="uppercase text-white text-4xl font-bold text-center lg:text-start mb-4">

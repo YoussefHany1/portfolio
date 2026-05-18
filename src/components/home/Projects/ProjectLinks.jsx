@@ -15,6 +15,7 @@ function ProjectLinks({ github, demo }) {
           src="/icons/github.json"
           trigger="loop"
           colors="secondary:#16c72e"
+          aria-label='View Github repository'
         />
         Github Repository
       </a>
@@ -32,6 +33,7 @@ function ProjectLinks({ github, demo }) {
           delay="500"
           colors="primary:#16c72e"
           style={{ transform: "rotate(320deg)" }}
+          aria-label='View live demo'
         />
         Live Demo
       </a>
